@@ -20,20 +20,31 @@
         .inner:hover .content-1 {
             max-height: 250px;
         }
+
+        .banner-bg-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(55 52 52 / 50%)), url('../assets/images/about/aboutbg-1.jpg');
+            /* Or use the file you uploaded */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            padding: 120px 0;
+            height: 100%;
+        }
     </style>
     <a class="close_side_menu" href="javascript:void(0);"></a>
 
     <!-- Start Banner Area -->
-    <div class="rbt-banner-area rbt-banner-8 variation-02">
+    <div class="rbt-banner-area rbt-banner-8 variation-02 banner-bg-section">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="content">
                         <div class="inner text-center">
 
-                            <h1 class="title">About Us
+                            <h1 class="title" style="color: white">About Us
                             </h1>
-                            <p class="description has-medium-font-size mt--20">Lorem, ipsum dolor sit amet consectetur
+                            <p class="description has-medium-font-size mt--20" style="color: white">Lorem, ipsum dolor sit amet consectetur
                                 adipisicing elit. Ex vero nam recusandae quisquam deleniti, eum distinctio totam? Corrupti,
                                 aliquam ducimus dolorem aperiam a, cumque in quod dicta, dolore sint autem!
                             </p>
@@ -53,6 +64,40 @@
         </div>
     </div>
     <!-- End Banner Area -->
+
+    <div class="rbt-about-area about-style-1 bg-color-white rbt-section-gapBottom">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="content">
+                        <img src="{{ asset('assets/images/about/about1.jpg') }}" alt="About Images">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-sal="slide-up" data-sal-duration="700">
+                    <div class="inner pl--50 pl_sm--5">
+                        <div class="content text-start">
+                            <span class="rbt-badge-6 bg-primary-opacity">About Lucky Star</span>
+                            <h3 class="title">Welcome to Lucky Star — Your Gateway to Smarter Trading.</h3>
+                            <p class="description mt--30"><strong>Lucky Star trading platform</strong> empowers you
+                                with advanced tools, real-time insights, and seamless execution for a better trading
+                                experience.</p>
+                            <p class="description">Whether you're a beginner or seasoned trader, our platform
+                                provides the flexibility, security, and support you need to navigate the markets
+                                with confidence.</p>
+                            <div class="read-more-btn mt--40">
+                                <a class="rbt-btn rbt-marquee-btn radius-round btn-gradient" href="#">
+                                    <span data-text="Start Trading For Free">
+                                        Start Trading For Free
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row g-5 hanger-line">
@@ -363,50 +408,16 @@
                 </div>
             </div>
             <!-- End Advance Tab  -->
-
-            <div class="rbt-about-area about-style-1 bg-color-white rbt-section-gap">
-                <div class="container">
-                    <div class="row g-5 align-items-center">
-                        <div class="col-lg-6">
-                            <div class="content">
-                                <img src="{{ asset('assets/images/about/about-06.png') }}" alt="About Images">
-                            </div>
-                        </div>
-                        <div class="col-lg-6" data-sal="slide-up" data-sal-duration="700">
-                            <div class="inner pl--50 pl_sm--5">
-                                <div class="content text-start">
-                                    <span class="rbt-badge-6 bg-primary-opacity">About Histudy</span>
-                                    <h3 class="title">Welcome to Histudy for your skills with best Online courses.</h3>
-                                    <p class="description mt--30"><strong>Histudy educational platform</strong> ipsum dolor
-                                        sit
-                                        amet
-                                        consectetur adipisicing elit.</p>
-                                    <p class="description">Nam inventore praesentium alias incidunt! Veritatis,
-                                        necessitatibus
-                                        fuga
-                                        dolore tenetur, beatae suscipit fugit est ea perspiciatis quo provident nisi dolor
-                                        similique
-                                        architecto nihil.</p>
-                                    <div class="read-more-btn mt--40">
-                                        <a class="rbt-btn rbt-marquee-btn radius-round btn-gradient" href="#">
-                                            <span data-text="Start Learning For Free">
-                                                Start Learning For Free
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
+    </div>
 
-        <x-separator />
-        <!-- Start Footer aera -->
+    <!-- End CallTo Action Area  -->
 
-        <x-footer />
-        <!-- End Footer aera -->
+    <x-separator />
+    <!-- Start Footer aera -->
 
-        <x-separator />
-    @endsection
+    <x-footer />
+    <!-- End Footer aera -->
+
+    <x-separator />
+@endsection

@@ -169,7 +169,7 @@
                                 aria-labelledby="android" style="text-align: center;">
                                 <a class="rbt-btn btn-gradient hover-icon-reverse" href="#">
                                     <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Android Download</span>
+                                        <span class="btn-text">Download</span>
                                         <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                         <span class="btn-icon"><img
                                                 src="{{ asset('assets/images/icons/android-light.png') }}" width="45px"
@@ -182,7 +182,7 @@
                                 style="text-align: center;">
                                 <a class="rbt-btn btn-gradient hover-icon-reverse" href="#">
                                     <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Windows Download</span>
+                                        <span class="btn-text">Download</span>
                                         <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                         <span class="btn-icon"><img
                                                 src="{{ asset('assets/images/icons/windows-light.png') }}" width="45px"
@@ -195,7 +195,7 @@
                                 style="text-align: center;">
                                 <a class="rbt-btn btn-gradient hover-icon-reverse" href="#">
                                     <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Mac Download</span>
+                                        <span class="btn-text">Download</span>
                                         <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                         <span class="btn-icon"><img
                                                 src="{{ asset('assets/images/icons/apple-light.png') }}" width="45px"
@@ -313,5 +313,39 @@
     </div>
     <!-- End Course Area -->
 
-    <x-separator />
+    <!-- Start CallTo Action Area  -->
+    <div class="rbt-call-to-action-area bg-gradient-8" style="padding: 50px 0;">
+        <div class="rbt-callto-action rbt-cta-default style-6">
+            <div class="container">
+                <div class="row g-5 align-items-center content-wrapper">
+                    <div class="col-xxl-3 col-xl-3 col-lg-6">
+                        <div class="inner">
+                            <div class="content text-start">
+                                <h2 class="title color-white mb--0">Trade With Us</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6">
+                        <div class="inner-content text-start">
+                            <p class="color-white">
+                                Start Your Trading Journey with Lucky Star Today! Join our community of successful traders and
+                                experience the power of our advanced trading platform.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-6">
+                        <div class="call-to-btn text-start text-xl-end">
+                            <a class="rbt-btn btn-white hover-icon-reverse" href="#">
+                                <span class="icon-reverse-wrapper">
+                                    <span class="btn-text">Try It Now</span>
+                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

@@ -14,28 +14,29 @@
 
     .nav-category-item {
         border-radius: 4px;
+        margin: 10px 30px;
         background-color: blueviolet;
     }
 
-    .nav-category-item .image {
+    /* .nav-category-item .image {
         &::after {
             content: '';
             position: absolute;
             top: 0;
             right: 0;
             height: 100%;
-            width: 30%;
+            width: 22%;
             background: rgba(0, 0, 0, 0.3);
             pointer-events: none;
             z-index: 1;
             border-radius: 0px 4px 4px 0px;
         }
-    }
+    } */
 
     .nav-category-item .image img {
         left: auto;
         right: 0;
-        width: 30%;
+        width: 22%;
         border-radius: 0px 4px 4px 0px;
     }
 
@@ -199,13 +200,13 @@
             <div class="mainbar-row rbt-navigation-start align-items-center">
                 <div class="header-left">
                     <div class="logo logo-dark">
-                        <a href="#">
+                        <a href="{{ route('Home') }}">
                             <img src="{{ asset('assets/images/logo/logo.png') }}" alt="Education Logo Images">
                         </a>
                     </div>
 
                     <div class="logo d-none logo-light">
-                        <a href="#">
+                        <a href="{{ route('Home') }}">
                             <img src="{{ asset('assets/images/dark/logo/logo-light.png') }}"
                                 alt="Education Logo Images">
                         </a>
@@ -504,8 +505,8 @@
 
         <nav class="mainmenu-nav">
             <ul class="mainmenu">
-                <li class="with-megamenu has-menu-child-item position-static">
-                    <a href="{{ route('Home') }}">Home <i class="feather-chevron-down"></i></a>
+                <li class="position-static">
+                    <a href="{{ route('Home') }}">Home</i></a>
                 </li>
 
                 <li class="with-megamenu has-menu-child-item position-static">
@@ -566,9 +567,12 @@
                     <!-- End Mega Menu  -->
                 </li>
 
-                <li class="with-megamenu has-menu-child-item position-static">
-                    <a href="{{route('about')}}">About <i class="feather-chevron-down"></i></a>
+                <li class="position-static">
+                    <a href="{{ route('contact') }}">Contact</a>
+                </li>
 
+                <li class="position-static">
+                    <a href="{{ route('about') }}">About</a>
                 </li>
             </ul>
         </nav>

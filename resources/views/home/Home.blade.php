@@ -8,9 +8,23 @@
 
 @section('content')
     <style>
-
         .title {
             text-align: center;
+        }
+
+        .shared-bg-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(55 52 52 / 50%)), url('assets/images/bg/homebg-2.jpg');
+            /* Or use the file you uploaded */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 120px 0;
+            height: 100%;
+        }
+
+        .hover-content h4,
+        .hover-content h5 {
+            color: #fff;
         }
     </style>
 
@@ -29,7 +43,7 @@
 
                 <!-- Start Single Banner  -->
                 <div class="swiper-slide">
-                    <div class="rbt-banner-area rbt-banner-6 variation-03 bg_image bg_image--16" data-black-overlay="3">
+                    <div class="rbt-banner-area rbt-banner-6 variation-03 bg_image bg_image--21" data-black-overlay="3">
                         <div class="wrapper w-100">
                             <div class="container">
                                 <div class="row align-items-center">
@@ -85,7 +99,7 @@
 
                 <!-- Start Single Banner  -->
                 <div class="swiper-slide">
-                    <div class="rbt-banner-area rbt-banner-6 variation-03 bg_image bg_image--21" data-black-overlay="3">
+                    <div class="rbt-banner-area rbt-banner-6 variation-03 bg_image bg_image--16" data-black-overlay="3">
                         <div class="wrapper w-100">
                             <div class="container">
                                 <div class="row align-items-center">
@@ -110,9 +124,6 @@
                     </div>
                 </div>
                 <!-- End Single Banner  -->
-
-
-
             </div>
 
             <div class="rbt-swiper-arrow rbt-arrow-left">
@@ -136,13 +147,13 @@
 
 
                 <div class="swiper-slide">
-                    <img src="{{ asset('assets/images/banner/banner-small-03.jpg') }}" alt="Banner Images">
+                    <img src="{{ asset('assets/images/banner/banner-small-02.jpg') }}" alt="Banner Images">
                 </div>
                 <div class="swiper-slide">
                     <img src="{{ asset('assets/images/banner/banner-small-01.jpg') }}" alt="Banner Images">
                 </div>
                 <div class="swiper-slide">
-                    <img src="{{ asset('assets/images/banner/banner-small-02.jpg') }}" alt="Banner Images">
+                    <img src="{{ asset('assets/images/banner/banner-small-03.jpg') }}" alt="Banner Images">
                 </div>
 
 
@@ -153,21 +164,18 @@
 
     <!-- Start Category Area  -->
 
+    <!-- TradingView Widget END -->
     <div class="rbt-category-area bg-color-white rbt-section-gapTop">
-
-        <div class="section-title text-center" style="margin-bottom: 50px;">
-            <h2 class="title">Key Features</h2>
-        </div>
 
         <div class="container">
             <div class="row g-5 justify-content-center">
                 <!-- Start Service Grid  -->
-                <div class="col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-4 col-6" data-sal-delay="100" data-sal="slide-up"
+                <div class="col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-6 col-12" data-sal-delay="100" data-sal="slide-up"
                     data-sal-duration="600">
                     <div class="service-card service-card-5 variation-2">
                         <div class="inner">
-                            <div class="icon" style="width: 150px; height: 150px;">
-                                <img src="{{ asset('assets/images/category/image/web-design.jpg') }}" alt="Shape Images">
+                            <div style="width: 100px; height: 100px;">
+                                <img src="{{ asset('assets/images/icons/keyFeature1.png') }}" alt="Shape Images">
                             </div>
                             <div class="content">
                                 <h6 class="title">Ultra-Fast Execution</h6>
@@ -178,13 +186,12 @@
                 <!-- End Service Grid  -->
 
                 <!-- Start Service Grid  -->
-                <div class="col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-4 col-6" data-sal-delay="200" data-sal="slide-up"
+                <div class="col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-6 col-12" data-sal-delay="200" data-sal="slide-up"
                     data-sal-duration="600">
                     <div class="service-card service-card-5 variation-2">
                         <div class="inner">
-                            <div class="icon" style="width: 150px; height: 150px;">
-                                <img src="{{ asset('assets/images/category/image/graphic-design.jpg') }}"
-                                    alt="Shape Images">
+                            <div style="width: 100px; height: 100px;">
+                                <img src="{{ asset('assets/images/icons/keyFeature2.png') }}" alt="Shape Images">
                             </div>
                             <div class="content">
                                 <h6 class="title">Regulated & Secure</h6>
@@ -195,12 +202,12 @@
                 <!-- End Service Grid  -->
 
                 <!-- Start Service Grid  -->
-                <div class="col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-4 col-6" data-sal-delay="300" data-sal="slide-up"
+                <div class="col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-6 col-12" data-sal-delay="300" data-sal="slide-up"
                     data-sal-duration="600">
                     <div class="service-card service-card-5 variation-2">
                         <div class="inner">
-                            <div class="icon" style="width: 150px; height: 150px;">
-                                <img src="{{ asset('assets/images/category/image/software.jpg') }}" alt="Shape Images">
+                            <div style="width: 100px; height: 100px;">
+                                <img src="{{ asset('assets/images/icons/keyFeature3.png') }}" alt="Shape Images">
                             </div>
                             <div class="content">
                                 <h6 class="title"> Deep Liquidity & Tight Spreads</h6>
@@ -211,12 +218,12 @@
                 <!-- End Service Grid  -->
 
                 <!-- Start Service Grid  -->
-                <div class="col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-4 col-6" data-sal-delay="400" data-sal="slide-up"
-                    data-sal-duration="600">
+                <div class="col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-6 col-12" data-sal-delay="400"
+                    data-sal="slide-up" data-sal-duration="600">
                     <div class="service-card service-card-5 variation-2">
                         <div class="inner">
-                            <div class="icon" style="width: 150px; height: 150px;">
-                                <img src="{{ asset('assets/images/category/image/mobile.jpg') }}" alt="Shape Images">
+                            <div style="width: 100px; height: 100px;">
+                                <img src="{{ asset('assets/images/icons/keyFeature4.png') }}" alt="Shape Images">
                             </div>
                             <div class="content">
                                 <h6 class="title"> Mobile & Web Trading Access</h6>
@@ -234,122 +241,96 @@
     <!-- Start Button Area  -->
     <div class="rbt-video-area bg-color-white rbt-section-gapTop" id="about">
         <div class="container">
-            <div class="row g-5 justify-content-center">
+            <div class="row g-4 justify-content-center">
                 <div class="col-lg-10">
                     <div class="inner pl--50 pl_lg--0 pl_md--0 pl_sm--0">
                         <div class="section-title text-start">
-                            <h4 class="title">Why Choose Us?</h4>
-                            <p class="description mt--30">
-                                We offer fast trade execution, deep liquidity, and flexible payment methods to make your
-                                trading smooth and easy. With trusted platforms like MT4 and MT5, 24/7 support, and helpful
-                                tools like copy trading and market analysis, we’re here to support traders at every level.
-                                Our services are secure, user-friendly, and built to help you grow.
-                            </p>
-                            <div class="row g-5 mt--40">
+                            <div data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
+                                <h4 class="title">Why Choose Us?</h4>
+                                <p class="description mt--30">
+                                    We offer fast trade execution, deep liquidity, and flexible payment methods to make your
+                                    trading smooth and easy. With trusted platforms like MT4 and MT5, 24/7 support, and
+                                    helpful
+                                    tools like copy trading and market analysis, we’re here to support traders at every
+                                    level.
+                                    Our services are secure, user-friendly, and built to help you grow.
+                                </p>
+                            </div>
+
+                            <div class="row g-4 mt--40">
                                 <div class="col-lg-6">
-                                    <div class="rbt-category-gallery" data-sal-delay="100" data-sal="slide-up"
-                                        data-sal-duration="600">
-                                        <div class="thumbnail">
-                                            <img src="{{ asset('assets/images/gallery/gallery-01.jpg') }}"
-                                                alt="Gallery Images">
-                                            <div class="rbt-bg-overlay"></div>
-                                            <div class="hover-content">
-                                                <h4 class="title">Swift Execution & Deep Liquidity</h4>
-                                                <p class="title p-5">We offer fast trade execution, deep liquidity, and
-                                                    flexible payment methods to make your trading smooth and easy.</p>
-                                            </div>
+                                    <div class="rbt-category-gallery shared-bg-section">
+                                        <div class="hover-content" style="color: #fff;">
+                                            <h4>Swift Execution & Deep Liquidity</h4>
+                                            <p class="p-2">We offer fast trade execution, deep liquidity, and
+                                                flexible payment methods to make your trading smooth and easy.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 d-lg-none">
-                                    <div class="rbt-category-gallery" data-sal-delay="100" data-sal="slide-up"
-                                        data-sal-duration="600">
-                                        <div class="thumbnail">
-                                            <img src="{{ asset('assets/images/gallery/gallery-01.jpg') }}"
-                                                alt="Gallery Images">
-                                            <div class="rbt-bg-overlay"></div>
-                                            <div class="hover-content">
-                                                <h4 class="title"> Industry-Leading Trading Platforms</h4>
-                                                <p class="title p-3">Trade anytime, anywhere with
-                                                    MetaTrader 4 and
-                                                    MetaTrader 5—trusted by millions worldwide. Access powerful
-                                                    tools, expert advisors, and advanced analytics across desktop
-                                                    and mobile devices.
-                                                </p>
-                                            </div>
+                                    <div class="rbt-category-gallery shared-bg-section">
+                                        <div class="hover-content" style="color: #fff;">
+                                            <h4> Industry-Leading Trading Platforms</h4>
+                                            <p class="p-2">Trade anytime, anywhere with
+                                                MetaTrader 4 and
+                                                MetaTrader 5—trusted by millions worldwide. Access powerful
+                                                tools, expert advisors, and advanced analytics across desktop
+                                                and mobile devices.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 d-lg-none">
-                                    <div class="rbt-category-gallery" data-sal-delay="100" data-sal="slide-up"
-                                        data-sal-duration="600">
-                                        <div class="thumbnail">
-                                            <img src="{{ asset('assets/images/gallery/gallery-01.jpg') }}"
-                                                alt="Gallery Images">
-                                            <div class="rbt-bg-overlay"></div>
-                                            <div class="hover-content">
-                                                <h4 class="title">Bonuses & Trading Contests</h4>
-                                                <p class="title p-3">Take advantage of exclusive
-                                                    bonuses,
-                                                    promotions, and trading competitions. From demo account contests
-                                                    to real cash prizes, we reward both new and experienced traders.
-                                                </p>
-                                            </div>
+                                    <div class="rbt-category-gallery shared-bg-section">
+                                        <div class="hover-content" style="color: #fff;">
+                                            <h4>Bonuses & Trading Contests</h4>
+                                            <p class="p-2">Take advantage of exclusive
+                                                bonuses,
+                                                promotions, and trading competitions. From demo account contests
+                                                to real cash prizes, we reward both new and experienced traders.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 d-lg-none">
-                                    <div class="rbt-category-gallery" data-sal-delay="100" data-sal="slide-up"
-                                        data-sal-duration="600">
-                                        <div class="thumbnail">
-                                            <img src="{{ asset('assets/images/gallery/gallery-01.jpg') }}"
-                                                alt="Gallery Images">
-                                            <div class="rbt-bg-overlay"></div>
-                                            <div class="hover-content">
-                                                <h4 class="title"> Daily Market Analysis & News</h4>
-                                                <p class="title p-3 ">Make informed decisions with access to daily
-                                                    financial news, technical analysis, trading signals, and economic
-                                                    calendars—all curated by our in-house market analysts.
-                                                </p>
-                                            </div>
+                                    <div class="rbt-category-gallery shared-bg-section">
+                                        <div class="hover-content" style="color: #fff;">
+                                            <h4> Daily Market Analysis & News</h4>
+                                            <p class="p-2 ">Make informed decisions with access to daily
+                                                financial news, technical analysis, trading signals, and economic
+                                                calendars—all curated by our in-house market analysts.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 d-none d-lg-block">
-                                    <div class="row g-5">
+                                    <div class="row g-4">
                                         <div class="col-lg-12">
-                                            <div class="rbt-category-gallery" data-sal-delay="300" data-sal="slide-up"
-                                                data-sal-duration="600">
-                                                <div class="thumbnail">
-                                                    <img src="{{ asset('assets/images/gallery/gallery-02.jpg') }}"
-                                                        alt="Gallery Images">
-                                                    <div class="rbt-bg-overlay"></div>
-                                                    <div class="hover-content">
-                                                        <h5 class="title"> Industry-Leading Trading Platforms</h5>
-                                                        <p class="title p-3">Trade anytime, anywhere with
+                                            <div class="rbt-category-gallery shared-bg-section">
+                                                <div class="hover-content" style="color: #fff;">
+                                                    <h4> Industry-Leading Trading Platforms</h5>
+                                                        <p class="p-2">Trade anytime, anywhere with
                                                             MetaTrader 4 and
                                                             MetaTrader 5—trusted by millions worldwide. Access powerful
-                                                            tools, expert advisors, and advanced analytics across desktop
+                                                            tools, expert advisors, and advanced analytics across
+                                                            desktop
                                                             and mobile devices.
                                                         </p>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
-                                            <div class="rbt-category-gallery" data-sal-delay="500" data-sal="slide-up"
-                                                data-sal-duration="600">
+                                            <div class="rbt-category-gallery shared-bg-section">
                                                 <div class="thumbnail">
-                                                    <img src="{{ asset('assets/images/gallery/gallery-02.jpg') }}"
-                                                        alt="Gallery Images">
-                                                    <div class="rbt-bg-overlay"></div>
-                                                    <div class="hover-content">
-                                                        <h5 class="title">Bonuses & Trading Contests</h5>
-                                                        <p class="title p-3">Take advantage of exclusive
-                                                            bonuses,
-                                                            promotions, and trading competitions. From demo account contests
-                                                            to real cash prizes, we reward both new and experienced traders.
-                                                        </p>
+                                                    <div class="hover-content" style="color: #fff;">
+                                                        <h4>Bonuses & Trading Contests</h5>
+                                                            <p class="p-2">Take advantage of exclusive
+                                                                bonuses,
+                                                                promotions, and trading competitions. From demo account
+                                                                contests
+                                                                to real cash prizes, we reward both new and experienced
+                                                                traders.
+                                                            </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -359,16 +340,13 @@
 
                                 <div class="col-lg-12  d-none d-lg-block">
                                     <div class="col-lg-12">
-                                        <div class="rbt-category-gallery" data-sal-delay="700" data-sal="slide-up"
-                                            data-sal-duration="600">
+                                        <div class="rbt-category-gallery shared-bg-section">
                                             <div class="thumbnail">
-                                                <img src="{{ asset('assets/images/gallery/gallery-02.jpg') }}"
-                                                    alt="Gallery Images">
-                                                <div class="rbt-bg-overlay"></div>
-                                                <div class="hover-content">
-                                                    <h4 class="title"> Daily Market Analysis & News</h4>
-                                                    <p class="title p-3 ">Make informed decisions with access to daily
-                                                        financial news, technical analysis, trading signals, and economic
+                                                <div class="hover-content" style="color: #fff;">
+                                                    <h4> Daily Market Analysis & News</h4>
+                                                    <p class="p-2 ">Make informed decisions with access to daily
+                                                        financial news, technical analysis, trading signals, and
+                                                        economic
                                                         calendars—all curated by our in-house market analysts.
                                                     </p>
                                                 </div>
@@ -383,33 +361,68 @@
             </div>
         </div>
     </div>
+
+    <div class="container rbt-section-gapTop">
+        <div class="row g-4 justify-content-left">
+            <div class="col-6">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container" style="height:100%;width:100%">
+                    <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
+                            rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
+                                TradingView</span></a></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                        {
+                            "width": "750",
+                            "height": "500",
+                            "symbol": "NASDAQ:NVDA",
+                            "interval": "15",
+                            "timezone": "Etc/UTC",
+                            "theme": "light",
+                            "style": "2",
+                            "locale": "en",
+                            "backgroundColor": "rgba(255, 255, 255, 1)",
+                            "allow_symbol_change": false,
+                            "save_image": false,
+                            "hide_volume": true,
+                            "support_host": "https://www.tradingview.com"
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- End Button Area  -->
-    <div class="rbt-callto-action-area bg-color-extra2 rbt-section-gap mt--50" id="signup" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
+    <div class="rbt-callto-action-area bg-color-extra2 rbt-section-gap mt--50" id="signup" data-sal="slide-up"
+        data-sal-duration="800" data-sal-delay="200">
         <div class="rbt-callto-action rbt-cta-default style-2">
-            <div class="container content-wrapper overflow-hidden" style="padding: 30px;">
+            <div class="container content-wrapper overflow-hidden"
+                style="padding: 30px; background: url('assets/images/bg/homebg-1.jpg') no-repeat center center; background-size: cover;"">
                 <div class="row gy-5 align-items-center justify-content-center">
                     <div class="col-lg-8">
                         <div class="inner">
                             <div class="content text-center">
-                                <h3 class="title" >
+                                <h3 class="title">
                                     Powerful trading tools, always at your fingertips.</h3>
                                 <h6 class="subtitle">
                                     Trade smarter, not harder.</h6>
-                                <a class="rbt-btn bg-secondary-opacity icon-hover mt-5" href="#">
+                                <a class="rbt-btn bg-secondary-opacity icon-hover mt-5" href="#"
+                                    style="border: 1px solid #b966e7;">
                                     <span class="btn-text">Sign Up Now</span>
                                     <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                 </a>
                             </div>
-
-
-
                         </div>
 
                     </div>
                     <div class="col-lg-4" style="margin-left: auto; margin-right: auto; text-align: center;">
                         <a href="#" class="rbt-video-popup rbt-popup-youtube">
                             <img src="{{ asset('assets/images/icons/googlePlay.png') }}" alt="Google Play"
-                                style="width: 170px; height: 57px; margin:30px;" />
+                                style="width: 170px; height: 57px; margin:30px; border-radius:12px;" />
                         </a>
                         <a href="#" class="rbt-video-popup rbt-popup-youtube">
                             <svg id="livetype" xmlns="http://www.w3.org/2000/svg" width="170.66407" height="72"
