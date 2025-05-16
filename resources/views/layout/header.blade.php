@@ -14,7 +14,7 @@
 
     .nav-category-item {
         border-radius: 4px;
-        margin: 10px 30px;
+        margin: 10px 10px;
         background-color: blueviolet;
     }
 
@@ -35,9 +35,14 @@
 
     .nav-category-item .image img {
         left: auto;
+        top: 5px;
         right: 0;
         width: 22%;
-        border-radius: 0px 4px 4px 0px;
+        height: 90%;
+        border-radius: 0px 10px 10px 0px;
+        opacity: 0;
+        transform: translateX(30px);
+        transition: all 0.5s ease;
     }
 
     .thumbnail>a {
@@ -58,6 +63,22 @@
         font-size: 16px;
         padding-bottom: 5px;
         color: blueviolet;
+    }
+
+    .glass-effect {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        transition: all 0.9s ease;
+    }
+
+    .glass-effect:hover .image img {
+        opacity: 1;
+        transform: translateX(-30px);
     }
 </style>
 
@@ -222,17 +243,18 @@
                             <li class="with-megamenu has-menu-child-item position-static">
                                 <a href="#">Services <i class="feather-chevron-down"></i></a>
                                 <!-- Start Mega Menu  -->
-                                <div class="rbt-megamenu grid-item-2" style="width: 420px;">
+                                <div class="rbt-megamenu grid-item-2">
                                     <div class="wrapper">
                                         <div class="row row--15">
-                                            <div class="col-lg-12 col-xl-12 col-xxl-12 single-mega-item">
+                                            <div class="col-6 single-mega-item">
                                                 <div class="mega-category-item">
                                                     <h2 class="rbt-short-title">TRADING SOFTWARE</h3>
                                                         <!-- Start Single Category  -->
-                                                        <div class="nav-category-item bg-gradient-7">
+                                                        <div class="nav-category-item glass-effect"
+                                                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/course/category2.jpg') }});">
                                                             <div class="thumbnail">
                                                                 <div class="image"><img
-                                                                        src="{{ asset('assets/images/course/category2.jpg') }}"
+                                                                        src="{{ asset('assets/images/icons/navbarService-1.png') }}"
                                                                         alt="Mobile App"></div>
                                                                 <a href="{{ route('serviceMobileApp') }}">
                                                                     <span>Mobile Application</span>
@@ -243,35 +265,95 @@
                                                         <!-- End Single Category  -->
 
                                                         <h2 class="rbt-short-title" style="padding-top:2px;">TRADING
-                                                            PLATFORM</h3>
-                                                            <!-- Start Single Category  -->
-                                                            <div class="nav-category-item bg-gradient-7">
-                                                                <div class="thumbnail">
-                                                                    <div class="image"><img
-                                                                            src="{{ asset('assets/images/course/category5.png') }}"
-                                                                            alt="Course images"></div>
-                                                                    <a href="{{ route('serviceMT5') }}">
-                                                                        <span>Meta Trader 5 (MT5)</span>
-                                                                        <i class="feather-chevron-right"></i>
-                                                                    </a>
-                                                                </div>
+                                                            PLATFORM</h2>
+                                                        <!-- Start Single Category  -->
+                                                        <div class="nav-category-item glass-effect"
+                                                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-1.jpg') }});">
+                                                            <div class="thumbnail">
+                                                                <div class="image"><img
+                                                                        src="{{ asset('assets/images/course/category5.png') }}"
+                                                                        alt="Course images"></div>
+                                                                <a href="{{ route('serviceMT5') }}">
+                                                                    <span>Meta Trader 5 (MT5)</span>
+                                                                    <i class="feather-chevron-right"></i>
+                                                                </a>
                                                             </div>
-                                                            <!-- End Single Category  -->
+                                                        </div>
+                                                        <!-- End Single Category  -->
 
-                                                            <!-- Start Single Category  -->
-                                                            <div class="nav-category-item bg-gradient-7">
-                                                                <div class="thumbnail">
-                                                                    <div class="image"><img
-                                                                            src="{{ asset('assets/images/course/category4.png') }}"
-                                                                            alt="Course images"></div>
-                                                                    <a href="{{ route('serviceMT4') }}">
-                                                                        <span>Meta Trader 4 (MT4)</span>
-                                                                        <i class="feather-chevron-right"></i>
-                                                                    </a>
-                                                                </div>
+                                                        <!-- Start Single Category  -->
+                                                        <div class="nav-category-item glass-effect"
+                                                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-2.jpg') }});">
+                                                            <div class="thumbnail">
+                                                                <div class="image"><img
+                                                                        src="{{ asset('assets/images/course/category4.png') }}"
+                                                                        alt="Course images"></div>
+                                                                <a href="{{ route('serviceMT4') }}">
+                                                                    <span>Meta Trader 4 (MT4)</span>
+                                                                    <i class="feather-chevron-right"></i>
+                                                                </a>
                                                             </div>
-                                                            <!-- End Single Category  -->
+                                                        </div>
+                                                        <!-- End Single Category  -->
 
+                                                </div>
+                                            </div>
+                                            <div class="col-6 single-mega-item">
+                                                <div class="mega-category-item">
+                                                    <h2 class="rbt-short-title" style="padding-top:2px;">TRADING
+                                                        PRODUCT</h2>
+                                                    <!-- Start Single Category  -->
+                                                    <div class="nav-category-item glass-effect">
+                                                        <div class="thumbnail">
+                                                            <div class="image"><img
+                                                                    src="{{ asset('assets/images/icons/navbarService-2.png') }}"
+                                                                    alt="Course images"></div>
+                                                            <a href="{{ route('serviceMT4') }}">
+                                                                <span>Forex</span>
+                                                                <i class="feather-chevron-right"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Category  -->
+                                                    <!-- Start Single Category  -->
+                                                    <div class="nav-category-item glass-effect">
+                                                        <div class="thumbnail">
+                                                            <div class="image"><img
+                                                                    src="{{ asset('assets/images/icons/navbarService-3.png') }}"
+                                                                    alt="Course images"></div>
+                                                            <a href="{{ route('serviceMT4') }}">
+                                                                <span>Indices</span>
+                                                                <i class="feather-chevron-right"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Category  -->
+                                                    <!-- Start Single Category  -->
+                                                    <div class="nav-category-item glass-effect">
+                                                        <div class="thumbnail">
+                                                            <div class="image"><img
+                                                                    src="{{ asset('assets/images/icons/navbarService-4.png') }}"
+                                                                    alt="Course images"></div>
+                                                            <a href="{{ route('serviceMT4') }}">
+                                                                <span>Metal</span>
+                                                                <i class="feather-chevron-right"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Category  -->
+                                                    <!-- Start Single Category  -->
+                                                    <div class="nav-category-item glass-effect">
+                                                        <div class="thumbnail">
+                                                            <div class="image"><img
+                                                                    src="{{ asset('assets/images/icons/navbarService-5.png') }}"
+                                                                    alt="Course images"></div>
+                                                            <a href="{{ route('serviceMT4') }}">
+                                                                <span>Gold</span>
+                                                                <i class="feather-chevron-right"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Category  -->
                                                 </div>
                                             </div>
                                         </div>

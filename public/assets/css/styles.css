@@ -11840,7 +11840,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
   right: 0;
 }
 .rbt-header .mainmenu-nav .mainmenu li.with-megamenu .rbt-megamenu.grid-item-2 {
-  width: 600px;
+  width: 700px;
   margin: 0 auto;
 }
 .rbt-header .mainmenu-nav .mainmenu li.with-megamenu .rbt-megamenu.grid-item-3 {
@@ -36294,7 +36294,7 @@ Course Sidebar
   color: var(--color-white);
 }
 .active-dark-mode .nav-category-item .thumbnail a {
-  color: var(--color-bodyest);
+  color: var(--color-white);
 }
 .active-dark-mode .nav-category-item .thumbnail a:hover {
   color: var(--color-primary);
@@ -36599,9 +36599,7 @@ Course Sidebar
   background-color: var(--color-white);
   opacity: 0.1;
 }
-.active-dark-mode .nav-category-item {
-  background: var(--color-white);
-}
+
 .active-dark-mode .nav-category-item::before {
   position: absolute;
   width: 100%;

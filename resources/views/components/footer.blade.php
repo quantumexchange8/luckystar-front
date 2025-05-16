@@ -1,3 +1,8 @@
+<style>
+    .active-dark-mode .googlePlay {
+        border: 1px solid #999999;
+    }
+</style>
 <footer class="rbt-footer footer-style-1 bg-color-white overflow-hidden mt-5">
     <div class="footer-top">
         <div class="container">
@@ -115,9 +120,10 @@
                             <li><span>Phone:</span> <a href="#">(406) 555-0120</a></li>
                             <li><span>E-mail:</span> <a href="mailto:hr@example.com">admin@example.com</a></li>
                         </ul>
-                        <div style="text-align: center;">
+                        <div style="text-align: left;">
                             <a href="#" class="rbt-video-popup rbt-popup-youtube">
                                 <img src="{{ asset('assets/images/icons/googlePlay.png') }}" alt="Google Play"
+                                    class="googlePlay"
                                     style="width: 170px; height: 57px; margin:30px 0px; border-radius:12px;" />
                             </a>
                             <a href="#" class="rbt-video-popup rbt-popup-youtube">

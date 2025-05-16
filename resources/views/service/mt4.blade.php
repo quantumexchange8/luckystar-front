@@ -23,6 +23,10 @@
         .card-hover:hover {
             transform: translateY(-5px);
         }
+
+        .active-dark-mode .mac-logo {
+            content: url({{ asset('assets/images/icons/apple-light.png') }});
+        }
     </style>
     <!-- Start Side Vav -->
 
@@ -35,7 +39,7 @@
     <div class="rbt-breadcrumb-default ptb--100 ptb_md--50 ptb_sm--30 bg-gradient-1">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12" data-sal="fade" data-sal-duration="600">
                     <div class="breadcrumb-inner text-center">
                         <div class="section-title text-center">
                             <div id="animatedHeading" class="rbt-elements-area">
@@ -158,8 +162,8 @@
                                 <button class="nav-link" id="home-tab5" data-bs-toggle="tab" data-bs-target="#Mac"
                                     type="button" role="tab" aria-controls="Mac" aria-selected="false">
                                     <div class="icon">
-                                        <img src="{{ asset('assets/images/icons/mac-os-logo.png') }}" width="45px"
-                                            height="45px" alt="Icons Images" style="padding: 10px;">Mac
+                                        <img src="{{ asset('assets/images/icons/mac-os-logo.png') }}" class="mac-logo"
+                                            width="45px" height="45px" alt="Icons Images" style="padding: 10px;">Mac
                                     </div>
                                 </button>
                             </li>
@@ -316,7 +320,7 @@
     <!-- Start CallTo Action Area  -->
     <div class="rbt-call-to-action-area bg-gradient-8" style="padding: 50px 0;">
         <div class="rbt-callto-action rbt-cta-default style-6">
-            <div class="container">
+            <div class="container" data-sal-delay="100" data-sal="fade" data-sal-duration="1000">
                 <div class="row g-5 align-items-center content-wrapper">
                     <div class="col-xxl-3 col-xl-3 col-lg-6">
                         <div class="inner">
@@ -328,7 +332,8 @@
                     <div class="col-xxl-6 col-xl-6 col-lg-6">
                         <div class="inner-content text-start">
                             <p class="color-white">
-                                Start Your Trading Journey with Lucky Star Today! Join our community of successful traders and
+                                Start Your Trading Journey with Lucky Star Today! Join our community of successful traders
+                                and
                                 experience the power of our advanced trading platform.
                             </p>
                         </div>
@@ -348,4 +353,6 @@
             </div>
         </div>
     </div>
+
+    <x-separator />
 @endsection

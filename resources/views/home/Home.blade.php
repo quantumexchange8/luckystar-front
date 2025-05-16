@@ -26,6 +26,35 @@
         .hover-content h5 {
             color: #fff;
         }
+
+        .widget {
+            height: 500px;
+        }
+
+        @media only screen and (max-width: 991px) {
+            .widget {
+                height: 1000px;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .widget-text {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+
+        .active-dark-mode .cta-text {
+            color: black;
+        }
+
+        .widget-text {
+            font-size: 25px;
+            line-height: 48px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 50px;
+        }
     </style>
 
     <!-- Start Side Vav -->
@@ -260,7 +289,8 @@
                             <div class="row g-4 mt--40">
                                 <div class="col-lg-6">
                                     <div class="rbt-category-gallery shared-bg-section">
-                                        <div class="hover-content" style="color: #fff;">
+                                        <div class="hover-content" style="color: #fff;" data-sal-delay="100"
+                                            data-sal="slide-up" data-sal-duration="600">
                                             <h4>Swift Execution & Deep Liquidity</h4>
                                             <p class="p-2">We offer fast trade execution, deep liquidity, and
                                                 flexible payment methods to make your trading smooth and easy.</p>
@@ -269,7 +299,8 @@
                                 </div>
                                 <div class="col-lg-6 d-lg-none">
                                     <div class="rbt-category-gallery shared-bg-section">
-                                        <div class="hover-content" style="color: #fff;">
+                                        <div class="hover-content" style="color: #fff;" data-sal-delay="300"
+                                            data-sal="slide-up" data-sal-duration="600">
                                             <h4> Industry-Leading Trading Platforms</h4>
                                             <p class="p-2">Trade anytime, anywhere with
                                                 MetaTrader 4 and
@@ -282,7 +313,8 @@
                                 </div>
                                 <div class="col-lg-6 d-lg-none">
                                     <div class="rbt-category-gallery shared-bg-section">
-                                        <div class="hover-content" style="color: #fff;">
+                                        <div class="hover-content" style="color: #fff;" data-sal-delay="500"
+                                            data-sal="slide-up" data-sal-duration="600">
                                             <h4>Bonuses & Trading Contests</h4>
                                             <p class="p-2">Take advantage of exclusive
                                                 bonuses,
@@ -294,7 +326,8 @@
                                 </div>
                                 <div class="col-lg-6 d-lg-none">
                                     <div class="rbt-category-gallery shared-bg-section">
-                                        <div class="hover-content" style="color: #fff;">
+                                        <div class="hover-content" style="color: #fff;" data-sal-delay="700"
+                                            data-sal="slide-up" data-sal-duration="600">
                                             <h4> Daily Market Analysis & News</h4>
                                             <p class="p-2 ">Make informed decisions with access to daily
                                                 financial news, technical analysis, trading signals, and economic
@@ -307,7 +340,8 @@
                                     <div class="row g-4">
                                         <div class="col-lg-12">
                                             <div class="rbt-category-gallery shared-bg-section">
-                                                <div class="hover-content" style="color: #fff;">
+                                                <div class="hover-content" style="color: #fff;" data-sal-delay="300"
+                                                    data-sal="slide-up" data-sal-duration="600">
                                                     <h4> Industry-Leading Trading Platforms</h5>
                                                         <p class="p-2">Trade anytime, anywhere with
                                                             MetaTrader 4 and
@@ -322,7 +356,8 @@
                                         <div class="col-lg-12">
                                             <div class="rbt-category-gallery shared-bg-section">
                                                 <div class="thumbnail">
-                                                    <div class="hover-content" style="color: #fff;">
+                                                    <div class="hover-content" style="color: #fff;" data-sal-delay="500"
+                                                        data-sal="slide-up" data-sal-duration="600">
                                                         <h4>Bonuses & Trading Contests</h5>
                                                             <p class="p-2">Take advantage of exclusive
                                                                 bonuses,
@@ -342,7 +377,8 @@
                                     <div class="col-lg-12">
                                         <div class="rbt-category-gallery shared-bg-section">
                                             <div class="thumbnail">
-                                                <div class="hover-content" style="color: #fff;">
+                                                <div class="hover-content" style="color: #fff;" data-sal-delay="700"
+                                                    data-sal="slide-up" data-sal-duration="600">
                                                     <h4> Daily Market Analysis & News</h4>
                                                     <p class="p-2 ">Make informed decisions with access to daily
                                                         financial news, technical analysis, trading signals, and
@@ -362,39 +398,209 @@
         </div>
     </div>
 
-    <div class="container rbt-section-gapTop">
-        <div class="row g-4 justify-content-left">
-            <div class="col-6">
-                <!-- TradingView Widget BEGIN -->
-                <div class="tradingview-widget-container" style="height:100%;width:100%">
-                    <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
-                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
-                            rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
-                                TradingView</span></a></div>
-                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-                        {
-                            "width": "750",
-                            "height": "500",
-                            "symbol": "NASDAQ:NVDA",
-                            "interval": "15",
-                            "timezone": "Etc/UTC",
-                            "theme": "light",
-                            "style": "2",
-                            "locale": "en",
-                            "backgroundColor": "rgba(255, 255, 255, 1)",
-                            "allow_symbol_change": false,
-                            "save_image": false,
-                            "hide_volume": true,
-                            "support_host": "https://www.tradingview.com"
-                        }
-                    </script>
+    <div class="rbt-testimonial-area bg-color-light mt-5 overflow-hidden" style="padding-top: 60px;">
+        <div class="wrapper mb--60">
+            <div class="container" data-sal-delay="200" data-sal="slide-left" data-sal-duration="800">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <span class="subtitle bg-primary-opacity">Chart the Market</span>
+                            <h2 class="title">Visualize Market Trends <br /> with Interactive Charts</h2>
+                        </div>
+                    </div>
                 </div>
-                <!-- TradingView Widget END -->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row g-4 widget mb-5">
+                <div class="col-12 col-lg-6" data-sal-delay="300" data-sal="slide-left" data-sal-duration="800">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container" style="height:100%;width:100%">
+                        <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%">
+                        </div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
+                                rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
+                                    TradingView</span></a></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                            {
+                                "width": "100%",
+                                "height": "100%",
+                                "symbol": "NASDAQ:NVDA",
+                                "interval": "15",
+                                "timezone": "Etc/UTC",
+                                "theme": "light",
+                                "style": "2",
+                                "locale": "en",
+                                "backgroundColor": "rgba(255, 255, 255, 1)",
+                                "allow_symbol_change": false,
+                                "save_image": false,
+                                "hide_volume": true,
+                                "support_host": "https://www.tradingview.com"
+                            }
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+                </div>
+
+                <div class="col-12 col-lg-6" data-sal-delay="500" data-sal="slide-left" data-sal-duration="800">
+                    <p class="widget-text">
+                        Analyze price movements and spot trading opportunities with dynamic, real-time charts—customizable
+                        to your needs and designed to bring market data to life.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+    </div>
 
-
+    <div class="rbt-testimonial-area mt-5 overflow-hidden" style="padding-top: 60px;">
+        <div class="wrapper mb--60" data-sal-delay="200" data-sal="slide-right" data-sal-duration="800">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <span class="subtitle bg-primary-opacity">Monitor Every Move</span>
+                            <h2 class="title">Track Global Market Moves
+                                <br />in Real Time
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row g-4 widget mt-5">
+                <div class="col-12 col-lg-6" data-sal-delay="500" data-sal="slide-right" data-sal-duration="800">
+                    <p class="widget-text">
+                        Stay ahead of the curve with live updates on global market performance — including opening prices,
+                        daily highs and lows, and real-time changes across key financial instruments.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6" data-sal-delay="300" data-sal="slide-right" data-sal-duration="800">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
+                                rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
+                                    TradingView</span></a></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+                            {
+                                "width": "100%",
+                                "height": "100%",
+                                "symbolsGroups": [{
+                                        "name": "Indices",
+                                        "originalName": "Indices",
+                                        "symbols": [{
+                                                "name": "FOREXCOM:SPXUSD",
+                                                "displayName": "S&P 500 Index"
+                                            },
+                                            {
+                                                "name": "FOREXCOM:NSXUSD",
+                                                "displayName": "US 100 Cash CFD"
+                                            },
+                                            {
+                                                "name": "FOREXCOM:DJI",
+                                                "displayName": "Dow Jones Industrial Average Index"
+                                            },
+                                            {
+                                                "name": "INDEX:NKY",
+                                                "displayName": "Japan 225"
+                                            },
+                                            {
+                                                "name": "INDEX:DEU40",
+                                                "displayName": "DAX Index"
+                                            },
+                                            {
+                                                "name": "FOREXCOM:UKXGBP",
+                                                "displayName": "FTSE 100 Index"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Forex",
+                                        "originalName": "Forex",
+                                        "symbols": [{
+                                                "name": "FX:EURUSD",
+                                                "displayName": "EUR to USD"
+                                            },
+                                            {
+                                                "name": "FX:GBPUSD",
+                                                "displayName": "GBP to USD"
+                                            },
+                                            {
+                                                "name": "FX:USDJPY",
+                                                "displayName": "USD to JPY"
+                                            },
+                                            {
+                                                "name": "FX:USDCHF",
+                                                "displayName": "USD to CHF"
+                                            },
+                                            {
+                                                "name": "FX:AUDUSD",
+                                                "displayName": "AUD to USD"
+                                            },
+                                            {
+                                                "name": "FX:USDCAD",
+                                                "displayName": "USD to CAD"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Futures",
+                                        "originalName": "Futures",
+                                        "symbols": [{
+                                                "name": "BMFBOVESPA:ISP1!",
+                                                "displayName": "S&P 500 Index Futures"
+                                            },
+                                            {
+                                                "name": "BMFBOVESPA:EUR1!",
+                                                "displayName": "Euro Futures"
+                                            },
+                                            {
+                                                "name": "PYTH:WTI3!",
+                                                "displayName": "WTI CRUDE OIL"
+                                            },
+                                            {
+                                                "name": "BMFBOVESPA:ETH1!",
+                                                "displayName": "Hydrous ethanol"
+                                            },
+                                            {
+                                                "name": "BMFBOVESPA:CCM1!",
+                                                "displayName": "Corn"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Bonds",
+                                        "originalName": "Bonds",
+                                        "symbols": [{
+                                                "name": "EUREX:FGBL1!",
+                                                "displayName": "Euro Bund"
+                                            },
+                                            {
+                                                "name": "EUREX:FBTP1!",
+                                                "displayName": "Euro BTP"
+                                            },
+                                            {
+                                                "name": "EUREX:FGBM1!",
+                                                "displayName": "Euro BOBL"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "showSymbolLogo": true,
+                                "isTransparent": false,
+                                "colorTheme": "light",
+                                "locale": "en",
+                                "backgroundColor": "#ffffff"
+                            }
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- End Button Area  -->
     <div class="rbt-callto-action-area bg-color-extra2 rbt-section-gap mt--50" id="signup" data-sal="slide-up"
@@ -406,9 +612,9 @@
                     <div class="col-lg-8">
                         <div class="inner">
                             <div class="content text-center">
-                                <h3 class="title">
+                                <h3 class="title cta-text">
                                     Powerful trading tools, always at your fingertips.</h3>
-                                <h6 class="subtitle">
+                                <h6 class="subtitle cta-text">
                                     Trade smarter, not harder.</h6>
                                 <a class="rbt-btn bg-secondary-opacity icon-hover mt-5" href="#"
                                     style="border: 1px solid #b966e7;">

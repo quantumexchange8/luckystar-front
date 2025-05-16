@@ -37,14 +37,15 @@
     <!-- Start Banner Area -->
     <div class="rbt-banner-area rbt-banner-8 variation-02 banner-bg-section">
         <div class="container">
-            <div class="row g-5 align-items-center">
+            <div class="row g-5 align-items-center" data-sal="fade" data-sal-duration="600">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="content">
                         <div class="inner text-center">
 
                             <h1 class="title" style="color: white">About Us
                             </h1>
-                            <p class="description has-medium-font-size mt--20" style="color: white">Lorem, ipsum dolor sit amet consectetur
+                            <p class="description has-medium-font-size mt--20" style="color: white">Lorem, ipsum dolor sit
+                                amet consectetur
                                 adipisicing elit. Ex vero nam recusandae quisquam deleniti, eum distinctio totam? Corrupti,
                                 aliquam ducimus dolorem aperiam a, cumque in quod dicta, dolore sint autem!
                             </p>
@@ -68,12 +69,12 @@
     <div class="rbt-about-area about-style-1 bg-color-white rbt-section-gapBottom">
         <div class="container">
             <div class="row g-5 align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-sal-delay="100" data-sal="slide-right" data-sal-duration="600">
                     <div class="content">
                         <img src="{{ asset('assets/images/about/about1.jpg') }}" alt="About Images">
                     </div>
                 </div>
-                <div class="col-lg-6" data-sal="slide-up" data-sal-duration="700">
+                <div class="col-lg-6" data-sal-delay="300" data-sal="slide-right" data-sal-duration="600">
                     <div class="inner pl--50 pl_sm--5">
                         <div class="content text-start">
                             <span class="rbt-badge-6 bg-primary-opacity">About Lucky Star</span>
@@ -100,7 +101,7 @@
     </div>
 
     <div class="container">
-        <div class="row g-5 hanger-line">
+        <div class="row g-5 hanger-line" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
             <!-- Start Single Counter  -->
             <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                 <div class="rbt-counterup rbt-hover-03 border-bottom-gradient">

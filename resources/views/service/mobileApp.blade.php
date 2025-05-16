@@ -31,7 +31,7 @@
     <div class="rbt-breadcrumb-default ptb--100 ptb_md--50 ptb_sm--30 bg-gradient-1">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12" data-sal="slide-up" data-sal-duration="600">
                     <div class="breadcrumb-inner text-center">
                         <h2 class="title">Mobile App</h2>
                         <ul class="page-list">
@@ -51,13 +51,13 @@
     <div class="rbt-admission-area bg-color-white rbt-section-gapTop">
         <div class="container">
             <div class="row g-5">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-sal-delay="100" data-sal="slide-left" data-sal-duration="600">
                     <div class="video-popup-wrapper">
                         <img class="w-100 rbt-radius" src="{{ asset('assets/images/others/video-04.jpg') }}"
                             alt="Video Images">
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-sal-delay="300" data-sal="slide-left" data-sal-duration="600">
                     <div class="addmission-guide-content pl--50 pl_sm--0 pl_md--0 --0">
                         <h3 class="title">Trade Smarter. Invest Better. Anytime, Anywhere.</h3>
                         <p>Step into the world of intelligent investing with our powerful mobile app designed for modern
@@ -92,7 +92,8 @@
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 order-1 order-lg-2">
-                        <div class="inner pl--50 pl_sm--0 pl_md--0">
+                        <div class="inner pl--50 pl_sm--0 pl_md--0" data-sal-delay="100" data-sal="slide-left"
+                            data-sal-duration="600">
                             <div class="section-title text-start">
                                 <span class="subtitle bg-pink-opacity">Why Choose Our App?</span>
                                 <h2 class="title">Empowering Traders. <br /> Connecting Opportunities.</h2>
@@ -139,7 +140,8 @@
                     <div class="col-lg-6 order-2 order-lg-2">
                         <div class="row row--30">
                             <!-- Start Single Counter  -->
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-12" data-sal-delay="100" data-sal="slide-up"
+                                data-sal-duration="600">
                                 <div class="rbt-counterup rbt-hover-03">
                                     <div class="inner">
                                         <div class="icon">
@@ -156,7 +158,8 @@
                             <!-- End Single Counter  -->
 
                             <!-- Start Single Counter  -->
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-12 mt--60">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-12 mt--60" data-sal-delay="300" data-sal="slide-up"
+                                data-sal-duration="600">
                                 <div class="rbt-counterup rbt-hover-03">
                                     <div class="inner">
                                         <div class="icon">
@@ -173,12 +176,14 @@
                             <!-- End Single Counter  -->
 
                             <!-- Start Single Counter  -->
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-12 mt_mobile--40">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-12 mt_mobile--40" data-sal-delay="500"
+                                data-sal="slide-up" data-sal-duration="600">
                                 <div class="rbt-counterup rbt-hover-03 transform-sm-none"
                                     data-parallax='{"x": 0, "y": -60}'>
                                     <div class="inner">
                                         <div class="icon">
-                                            <img src="{{ asset('assets/images/icons/counter-03.png') }}" alt="Icons Images">
+                                            <img src="{{ asset('assets/images/icons/counter-03.png') }}"
+                                                alt="Icons Images">
                                         </div>
                                         <div class="content">
                                             <h3 class="counter"><span class="odometer" data-count="20000">00</span>
@@ -191,11 +196,14 @@
                             <!-- End Single Counter  -->
 
                             <!-- Start Single Counter  -->
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-12 mt--60 mt_mobile--40">
-                                <div class="rbt-counterup rbt-hover-03 transform-sm-none" data-parallax='{"x": 0, "y": 60}'>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-12 mt--60 mt_mobile--40" data-sal-delay="700"
+                                data-sal="slide-up" data-sal-duration="600">
+                                <div class="rbt-counterup rbt-hover-03 transform-sm-none"
+                                    data-parallax='{"x": 0, "y": 60}'>
                                     <div class="inner">
                                         <div class="icon">
-                                            <img src="{{ asset('assets/images/icons/counter-04.png') }}" alt="Icons Images">
+                                            <img src="{{ asset('assets/images/icons/counter-04.png') }}"
+                                                alt="Icons Images">
                                         </div>
                                         <div class="content">
                                             <h3 class="counter"><span class="odometer" data-count="10000">00</span>
@@ -214,11 +222,11 @@
     </div>
 
     <!-- Start CallTo Action Area  -->
-    <div class="rbt-call-to-action-area rbt-section-gap bg-color-extra2">
+    <div class="rbt-call-to-action-area bg-color-extra2">
         <div class="wrapper">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1">
+                <div class="row" data-sal-delay="200" data-sal="fade" data-sal-duration="1000">
+                    <div class="col-lg-8">
                         <div class="rbt-cta-5">
                             <div class="content">
                                 <h1 class="title">Download Our App & Start Trading Today</h1>
@@ -233,11 +241,15 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-lg-4">
+                        <img class="w-lg-100 h-lg-100" src="{{ asset('assets/images/bg/mobileApp-1.png') }}"
+                            alt="Mobile App">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End CallTo Action Area  -->
+        <!-- End CallTo Action Area  -->
 
-    <x-separator />
-@endsection
+        <x-separator />
+    @endsection
