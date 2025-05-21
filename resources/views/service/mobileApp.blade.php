@@ -18,6 +18,15 @@
             border-radius: 10px;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
         }
+
+        .bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(55 52 52 / 50%)), url('../assets/images/course/category2.jpg');
+            /* Or use the file you uploaded */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
     </style>
 
     <!-- Start Side Vav -->
@@ -28,7 +37,7 @@
     <a class="close_side_menu" href="javascript:void(0);"></a>
 
     <!-- Start breadcrumb Area -->
-    <div class="rbt-breadcrumb-default ptb--100 ptb_md--50 ptb_sm--30 bg-gradient-1">
+    <div class="rbt-breadcrumb-default ptb--100 ptb_md--50 ptb_sm--30 bg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12" data-sal="slide-up" data-sal-duration="600">
@@ -223,7 +232,7 @@
 
     <!-- Start CallTo Action Area  -->
     <div class="rbt-call-to-action-area bg-color-extra2">
-        <div class="wrapper">
+        <div class="wrapper" style="padding: 30px 0;">
             <div class="container">
                 <div class="row" data-sal-delay="200" data-sal="fade" data-sal-duration="1000">
                     <div class="col-lg-8">

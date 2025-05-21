@@ -12,18 +12,22 @@ Route::controller(HomeController::class)->group(function () {
 
 //  Instructor-dashboard
 Route::prefix('service')->group(function () {
-        Route::controller(ServiceController::class)->group(function () {
-            Route::get('/mobile-app' ,'serviceMobileApp')->name('serviceMobileApp');
-            Route::get('/MT5' ,'serviceMT5')->name('serviceMT5');
-            Route::get('/MT4' ,'serviceMT4')->name('serviceMT4');
-        });
+    Route::controller(ServiceController::class)->group(function () {
+        Route::get('/mobile-app', 'serviceMobileApp')->name('serviceMobileApp');
+        Route::get('/MT5', 'serviceMT5')->name('serviceMT5');
+        Route::get('/MT4', 'serviceMT4')->name('serviceMT4');
+        Route::get('/Forex', 'serviceForex')->name('serviceForex');
+        Route::get('/Indices', 'serviceIndices')->name('serviceIndices');
+        Route::get('/PreciousMetal', 'serviceMetal')->name('serviceMetal');
+        Route::get('/Stock', 'serviceStock')->name('serviceStock');
+    });
 });
 
 
-    //  courses
+//  courses
 Route::prefix('pages')->group(function () {
     Route::controller(pagesController::class)->group(function () {
-        Route::get('/about' ,'aboutus02')->name('about');
-        Route::get('/contact' ,'contact')->name('contact');
+        Route::get('/about', 'aboutus02')->name('about');
+        Route::get('/contact', 'contact')->name('contact');
     });
 });

@@ -27,6 +27,15 @@
         .active-dark-mode .mac-logo {
             content: url({{ asset('assets/images/icons/apple-light.png') }});
         }
+
+        .bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/bg/navbarServiceBg-1.jpg');
+            /* Or use the file you uploaded */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
     </style>
     <!-- Start Side Vav -->
 
@@ -36,7 +45,7 @@
     <a class="close_side_menu" href="javascript:void(0);"></a>
 
     <!-- Start breadcrumb Area -->
-    <div class="rbt-breadcrumb-default ptb--100 ptb_md--50 ptb_sm--30 bg-gradient-1">
+    <div class="rbt-breadcrumb-default ptb--100 ptb_md--50 ptb_sm--30 bg">
         <div class="container" data-sal="fade" data-sal-duration="600">
             <div class="row">
                 <div class="col-lg-12">

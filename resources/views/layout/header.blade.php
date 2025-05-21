@@ -303,12 +303,13 @@
                                                     <h2 class="rbt-short-title" style="padding-top:2px;">TRADING
                                                         PRODUCT</h2>
                                                     <!-- Start Single Category  -->
-                                                    <div class="nav-category-item glass-effect">
+                                                    <div class="nav-category-item glass-effect"
+                                                        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-3.jpg') }});">
                                                         <div class="thumbnail">
                                                             <div class="image"><img
                                                                     src="{{ asset('assets/images/icons/navbarService-2.png') }}"
                                                                     alt="Course images"></div>
-                                                            <a href="{{ route('serviceMT4') }}">
+                                                            <a href="{{ route('serviceForex') }}">
                                                                 <span>Forex</span>
                                                                 <i class="feather-chevron-right"></i>
                                                             </a>
@@ -316,12 +317,13 @@
                                                     </div>
                                                     <!-- End Single Category  -->
                                                     <!-- Start Single Category  -->
-                                                    <div class="nav-category-item glass-effect">
+                                                    <div class="nav-category-item glass-effect"
+                                                        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-4.jpg') }});">
                                                         <div class="thumbnail">
                                                             <div class="image"><img
                                                                     src="{{ asset('assets/images/icons/navbarService-3.png') }}"
                                                                     alt="Course images"></div>
-                                                            <a href="{{ route('serviceMT4') }}">
+                                                            <a href="{{ route('serviceIndices') }}">
                                                                 <span>Indices</span>
                                                                 <i class="feather-chevron-right"></i>
                                                             </a>
@@ -329,26 +331,29 @@
                                                     </div>
                                                     <!-- End Single Category  -->
                                                     <!-- Start Single Category  -->
-                                                    <div class="nav-category-item glass-effect">
+                                                    <div class="nav-category-item glass-effect"
+                                                        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-6.jpg') }});">
+
                                                         <div class="thumbnail">
                                                             <div class="image"><img
-                                                                    src="{{ asset('assets/images/icons/navbarService-4.png') }}"
+                                                                    src="{{ asset('assets/images/icons/navbarService-5.png') }}"
                                                                     alt="Course images"></div>
-                                                            <a href="{{ route('serviceMT4') }}">
-                                                                <span>Metal</span>
+                                                            <a href="{{ route('serviceMetal') }}">
+                                                                <span>Precious Metal</span>
                                                                 <i class="feather-chevron-right"></i>
                                                             </a>
                                                         </div>
                                                     </div>
                                                     <!-- End Single Category  -->
                                                     <!-- Start Single Category  -->
-                                                    <div class="nav-category-item glass-effect">
+                                                    <div class="nav-category-item glass-effect"
+                                                        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-5.jpg') }});">
                                                         <div class="thumbnail">
                                                             <div class="image"><img
-                                                                    src="{{ asset('assets/images/icons/navbarService-5.png') }}"
+                                                                    src="{{ asset('assets/images/icons/navbarService-4.png') }}"
                                                                     alt="Course images"></div>
-                                                            <a href="{{ route('serviceMT4') }}">
-                                                                <span>Gold</span>
+                                                            <a href="{{ route('serviceStock') }}">
+                                                                <span>Stock</span>
                                                                 <i class="feather-chevron-right"></i>
                                                             </a>
                                                         </div>

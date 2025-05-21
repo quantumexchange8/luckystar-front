@@ -14190,7 +14190,7 @@ span.transparent-button:hover i {
     Breadcrump Area 
 ======================*/
 .rbt-breadcrumb-default .title {
-  color: var(--color-heading);
+  color: var(--color-white);
   margin-bottom: 5px;
   font-size: 50px;
 }
@@ -14230,21 +14230,21 @@ span.transparent-button:hover i {
   top: 2px;
 }
 .page-list li.active {
-  color: var(--color-body);
+  color: var(--color-white-dark);
   opacity: 0.6;
 }
 .page-list li a {
-  color: var(--color-body);
+  color: var(--color-white-dark);
   transition: 0.5s;
 }
 .page-list li a:hover {
-  color: var(--color-primary);
+  color: var(--color-white);
 }
 .page-list li .icon-right {
   padding: 0 4px;
 }
 .page-list li .icon-right i {
-  color: var(--color-body);
+  color: var(--color-white-dark);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15548,7 +15548,7 @@ span.transparent-button:hover i {
   }
 }
 .rbt-service.rbt-service-1 .inner .icon img {
-  max-width: 55px;
+  max-width: 150px;
 }
 .rbt-service.rbt-service-1 .inner .content .title {
   margin-bottom: 16px;
@@ -15604,16 +15604,39 @@ span.transparent-button:hover i {
     flex-basis: 100%;
     margin-bottom: 10px;
   }
+
+  .rbt-service.rbt-service-2 .inner .thumbnail img {
+    width: 25%;
+    height: 25%;
+  }
 }
-.rbt-service.rbt-service-2 .inner .thumbnail img {
+  @media only screen and (max-width:991px) {
+  .rbt-service.rbt-service-2 .inner .content{
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  .rbt-service.rbt-service-2 .inner .thumbnail img {
+  width: 40%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+  .rbt-service.rbt-service-2 .inner .thumbnail img {
   width: 100%;
+  }
 }
+
 .rbt-service.rbt-service-2 .inner .content {
   flex-basis: 50%;
 }
 @media only screen and (max-width: 767px) {
   .rbt-service.rbt-service-2 .inner .content {
     flex-basis: 100%;
+    text-align: center;
   }
 }
 .rbt-service.rbt-service-2 .inner .content .title {
@@ -15666,10 +15689,10 @@ span.transparent-button:hover i {
 .rbt-flipbox .rbt-flipbox-wrap {
   position: relative;
   transition-property: box-shadow, transform;
-  transition-duration: 0.6s;
+  transition-duration: 1.4s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform-style: preserve-3d;
-  height: 100%;
+  height: 570px;
 }
 .rbt-flipbox .rbt-flipbox-wrap .rbt-flipbox-face {
   transform-style: preserve-3d;
@@ -15700,11 +15723,6 @@ span.transparent-button:hover i {
   transform: rotateY(180deg) translateZ(1px);
   background: linear-gradient(1turn, #e9dcfa, #d05aff);
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  justify-content: space-between;
-  text-align: center;
   border-radius: 6px;
   text-align: left;
 }
@@ -23642,6 +23660,11 @@ body.modal-open {
 /*----------------------
     Rbt List Style  
 ------------------------*/
+
+.active-dark-mode .rbt-list-style-1 li{
+  color: var(--color-white);
+}
+
 .rbt-list-style-1 li {
   display: flex;
   font-size: 18px;
@@ -23711,8 +23734,10 @@ body.modal-open {
 
 .rbt-list-style-3 li {
   display: flex;
+  justify-content: center;
+  font-weight: 500;
   font-size: 16px;
-  margin: 7px 0;
+  margin: 7px 15px;
   line-height: 1.45;
   color: var(--color-body);
 }
@@ -23772,6 +23797,7 @@ body.modal-open {
   background: var(--primary-opacity);
   border-radius: 20px;
   padding: 40px;
+  position: relative;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .modern-course-features-box {
@@ -23790,6 +23816,7 @@ body.modal-open {
 }
 .modern-course-features-box .inner {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -23946,8 +23973,13 @@ body.modal-open {
 .course-feature-list li .icon i {
   color: var(--color-white);
 }
-.course-feature-list li .feature-content .featute-title {
+
+.active-dark-mode .course-feature-list li .feature-content .featute-title {
   color: var(--color-white);
+}
+
+.course-feature-list li .feature-content .featute-title {
+  color: var(--color-black);
   margin-bottom: 0;
   font-size: 20px;
 }
@@ -23956,11 +23988,16 @@ body.modal-open {
     font-size: 16px;
   }
 }
+
+.active-dark-mode .course-feature-list li .feature-content .featute-title span{
+  color: var(--color-white);
+}
+
 .course-feature-list li .feature-content .featute-title span {
   display: block;
   font-weight: 400;
   font-size: 16px;
-  color: var(--color-white-off);
+  color: var(--color-black);
 }
 @media only screen and (max-width: 767px) {
   .course-feature-list li .feature-content .featute-title span {
@@ -37622,7 +37659,7 @@ Course Sidebar
   box-shadow: var(--dark-shadow-1);
 }
 .active-dark-mode .rbt-service.rbt-service-2 .inner .content {
-  color: var(--color-bodyest);
+  color: var(--color-white-off);
 }
 .active-dark-mode .rbt-service.rbt-service-2 .inner .content p {
   color: var(--color-white-off);
