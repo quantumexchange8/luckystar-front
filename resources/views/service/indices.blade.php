@@ -99,12 +99,11 @@
                                     <span class="header-caption">
                                         <span class="cd-headline cd-headline clip is-full-width">
                                             <span class="cd-words-wrapper">
-                                                <b class="is-visible theme-gradient">Follow the Giants — Invest in Leading
+                                                <b class="is-visible theme-gradient">Invest in Leading
                                                     Global Indices</b>
-                                                <b class="is-hidden theme-gradient">Capture Market Momentum — One Index at a
+                                                <b class="is-hidden theme-gradient">One Index at a
                                                     Time</b>
-                                                <b class="is-hidden theme-gradient">Trade the Market, Not Just Stocks —
-                                                    Indices in Action
+                                                <b class="is-hidden theme-gradient">Trade the Market, Not Just Stocks
                                                 </b>
                                             </span>
                                         </span>

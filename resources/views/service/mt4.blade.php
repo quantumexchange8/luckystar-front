@@ -28,13 +28,39 @@
             content: url({{ asset('assets/images/icons/apple-light.png') }});
         }
 
-        .bg{
+        .bg {
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(55 52 52 / 50%)), url('../assets/images/bg/navbarServiceBg-2.jpg');
             /* Or use the file you uploaded */
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .mg-y {
+                margin: 50px 0;
+            }
+
+            .pd-y {
+                padding: 50px 25px;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .mg-y {
+                margin: 100px 0;
+            }
+
+            .pd-y {
+                padding: 100px 50px;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .sml-content {
+                padding: 0 200px;
+            }
         }
     </style>
     <!-- Start Side Vav -->
@@ -141,33 +167,47 @@
 
     <div class="rbt-tab-area bg-color-white " data-sal-delay="0" data-sal="slide-up" data-sal-duration="800">
         <div class="container">
-            <div class="row row row--30 align-items-center">
+            <div class="row row row--30 align-items-center download-tab ">
                 <div class="col-md-8 col-lg-7 col-xl-6 mt_md--40 mt_sm--40 order-2 order-lg-1"
                     style="margin-left: auto; margin-right:auto;">
                     <div class="rbt-default-tab" style="box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); border-radius:20px;">
                         <ul class="nav nav-tabs tab-button" role="tablist"
                             style=" border-bottom: 1px solid rgb(236, 233, 233);">
-                            <li class="nav-item tabs__tab " role="presentation">
 
+                            <li class="nav-item tabs__tab col-4" role="presentation">
                                 <button class="nav-link active" id="home-tab-5" data-bs-toggle="tab"
                                     data-bs-target="#android" type="button" role="tab" aria-controls="android"
-                                    aria-selected="true">
+                                    aria-selected="true" style="border-radius: 20px 0 0 0; width:100%; height:100%;">
                                     <div class="icon">
                                         <img src="{{ asset('assets/images/icons/android.png') }}" width="45px"
-                                            height="45px" alt="Icons Images" style="padding: 10px;">Android
+                                            height="45px" alt="Icons Images" style="padding: 10px;">
                                     </div>
+                                    Android
                                 </button>
                             </li>
-                            <li class="nav-item tabs__tab " role="presentation">
+                            <li class="nav-item tabs__tab col-4" role="presentation">
                                 <button class="nav-link" id="home-tab-5" data-bs-toggle="tab" data-bs-target="#windows"
-                                    type="button" role="tab" aria-controls="windows" aria-selected="true">
+                                    type="button" role="tab" aria-controls="windows" aria-selected="true"
+                                    style="width:100%; height:100%;">
                                     <div class="icon">
                                         <img src="{{ asset('assets/images/icons/windows.png') }}" width="45px"
-                                            height="45px" alt="Icons Images" style="padding: 10px;">Windows
+                                            height="45px" alt="Icons Images" style="padding: 10px;">
                                     </div>
+                                    Windows
                                 </button>
                             </li>
-                            <li class="nav-item tabs__tab " role="presentation">
+                            <li class="nav-item tabs__tab col-4" role="presentation">
+                                <button class="nav-link" id="home-tab5" data-bs-toggle="tab" data-bs-target="#Mac"
+                                    type="button" role="tab" aria-controls="Mac" aria-selected="true"
+                                    style="border-radius: 0 20px 0 0; width:100%; height:100%;">
+                                    <div class="icon">
+                                        <img src="{{ asset('assets/images/icons/mac-os-logo.png') }}" width="45px"
+                                            height="45px" alt="Icons Images" style="padding: 10px;">
+                                    </div>
+                                    Mac
+                                </button>
+                            </li>
+                            {{-- <li class="nav-item tabs__tab col-4" role="presentation">
                                 <button class="nav-link" id="home-tab5" data-bs-toggle="tab" data-bs-target="#Mac"
                                     type="button" role="tab" aria-controls="Mac" aria-selected="false">
                                     <div class="icon">
@@ -175,7 +215,7 @@
                                             width="45px" height="45px" alt="Icons Images" style="padding: 10px;">Mac
                                     </div>
                                 </button>
-                            </li>
+                            </li> --}}
                         </ul>
                         <div class="rainbow-tab-content tab-content" style="border-radius: 0 0 20px 20px;">
                             <div class="tab-pane fade show active" id="android" role="tabpanel"
@@ -225,104 +265,126 @@
     </div>
 
     <!-- Start Course Area -->
-    <div class="rbt-course-area rbt-section-gapBottom rbt-section-gap">
-        <div class="container">
-            <div class="row g-5">
+    <div class="rbt-course-area rbt-section-gapBottom">
 
-                <!-- Start Single Card  -->
-                <div class="col-xl-6 col-lg-6 col-md-6 col-12" data-sal-delay="100" data-sal="slide-up"
-                    data-sal-duration="400">
-                    <div class="rbt-card variation-03 style_2 card-hover">
-                        <div class="rbt-card-body">
-                            <div class="icon">
-                                <img src="{{ asset('assets/images/icons/mt4-1.png') }}" width="60px" height="60px"
-                                    alt="Icons Images" style="margin-bottom: 20px;">
-                            </div>
-                            <h5 class="rbt-card-title">Advanced Charting Tools
-                            </h5>
-                            <p class="rbt-card-text" style="font-size: 18px;">Unlock deeper market insights with
-                                MetaTrader 4’s powerful charting suite. Whether you're new to trading or a seasoned expert,
-                                MT4 offers a wide range of customisable charts, technical indicators, drawing tools, and
-                                timeframes to support your market analysis. </p>
-                            <br />
-                            <p class="rbt-card-text" style="font-size: 18px;">
-                                Stay ahead of the curve by making informed decisions with precision.</p>
+        <!-- Start Single Section  -->
+        <div class="row g-5 align-items-center mg-y pd-y">
+            <div class="col-lg-6" data-sal-delay="100" data-sal="slide-right" data-sal-duration="600">
+                <div class="content text-center">
+                    <img src="{{ asset('assets/images/service/mt4-1.avif') }}" alt="MT4 Images">
+                </div>
+            </div>
+            <div class="col-lg-6" data-sal-delay="300" data-sal="slide-left" data-sal-duration="600">
+                <div class="inner pl--50 pl_sm--5">
+
+                    <div class="content text-start">
+                        <div class="icon">
+                            <img src="{{ asset('assets/images/icons/mt4-1.png') }}" width="60px" height="60px"
+                                alt="Icons Images" style="margin-bottom: 20px;">
                         </div>
+                        <h3 class="title">Advanced Charting Tools</h3>
+                        <p class="rbt-card-text" style="font-size: 18px;">Maximize your strategy with MT5’s built-in
+                            support for automated
+                            trading and professional forex trading signals. Choose from thousands of verified signal
+                            providers in the MetaTrader Market and automatically mirror the trades of top-performing
+                            professionals. </p>
+                        <br />
+                        <p class="rbt-card-text" style="font-size: 18px;">
+                            You can also explore and purchase over 2,000 expert advisors (EAs) and
+                            technical indicators to customize and automate your trading experience.</p>
+
                     </div>
                 </div>
-                <!-- End Single Card  -->
-
-                <!-- Start Single Card  -->
-                <div class="col-xl-6 col-lg-6 col-md-6 col-12" data-sal-delay="200" data-sal="slide-up"
-                    data-sal-duration="800">
-                    <div class="rbt-card variation-03 style_2 card-hover">
-                        <div class="rbt-card-body">
-                            <div class="icon">
-                                <img src="{{ asset('assets/images/icons/mt4-2.png') }}" width="60px" height="60px"
-                                    alt="Icons Images" style="margin-bottom: 20px;">
-                            </div>
-                            <h5 class="rbt-card-title">Why Traders Choose MT4?
-                            </h5>
-                            <p class="rbt-card-text" style="font-size: 18px;">MetaTrader 4 remains a top choice for
-                                traders globally thanks to its intuitive design and comprehensive functionality. The
-                                platform combines simplicity with powerful features, making it ideal for both beginners and
-                                professionals. </p>
-                            <br />
-                            <p class="rbt-card-text" style="font-size: 18px;">Access your account on desktop, web, or
-                                mobile — and trade with confidence anytime, anywhere.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Card  -->
-
-                <!-- Start Single Card  -->
-                <div class="col-xl-6 col-lg-6 col-md-6 col-12" data-sal-delay="100" data-sal="slide-up"
-                    data-sal-duration="400">
-                    <div class="rbt-card variation-03 style_2 card-hover">
-                        <div class="rbt-card-body">
-                            <div class="icon">
-                                <img src="{{ asset('assets/images/icons/mt4-3.png') }}" width="60px" height="60px"
-                                    alt="Icons Images" style="margin-bottom: 20px;">
-                            </div>
-                            <h5 class="rbt-card-title">Automated Trading with Expert Advisors (EAs)
-
-                            </h5>
-                            <p class="rbt-card-text" style="font-size: 18px;">Boost your trading efficiency with Expert
-                                Advisors (EAs) — fully customisable automation tools within MT4.</p>
-                            <br />
-                            <p class="rbt-card-text" style="font-size: 18px;"> These smart trading bots analyse price data
-                                and execute trades based on predefined strategies, allowing you to automate your trading
-                                around the clock, without manual intervention.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Card  -->
-
-                <!-- Start Single Card  -->
-                <div class="col-xl-6 col-lg-6 col-md-6 col-12" data-sal-delay="200" data-sal="slide-up"
-                    data-sal-duration="800">
-                    <div class="rbt-card variation-03 style_2 card-hover">
-                        <div class="rbt-card-body">
-                            <div class="icon">
-                                <img src="{{ asset('assets/images/icons/mt4-4.png') }}" width="60px" height="60px"
-                                    alt="Icons Images" style="margin-bottom: 20px;">
-                            </div>
-                            <h5 class="rbt-card-title">Real-Time Trading Signals
-                            </h5>
-                            <p class="rbt-card-text" style="font-size: 18px;">Stay informed and responsive with MT4’s
-                                built-in trading signal system. Subscribe to free or paid signal providers and automatically
-                                mirror their trades.</p>
-                            <br />
-                            <p class="rbt-card-text" style="font-size: 18px;">Each signal is ranked by performance,
-                                helping you identify high-potential strategies and act on opportunities as they arise — with
-                                no guesswork.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Card  -->
-
             </div>
         </div>
+        <!-- End Single Section  -->
+
+        <!-- Start Single Section  -->
+        <div class="row g-5 align-items-center bg-color-coral-opacity mg-y pd-y">
+            <div class="col-lg-6" data-sal-delay="300" data-sal="slide-right" data-sal-duration="600">
+                <div class="inner pl--50 pl_sm--5">
+
+                    <div class="content text-start">
+                        <div class="icon">
+                            <img src="{{ asset('assets/images/icons/mt4-2.png') }}" width="60px" height="60px"
+                                alt="Icons Images" style="margin-bottom: 20px;">
+                        </div>
+                        <h3 class="title">Why Traders Choose MT4?</h3>
+                        <p class="rbt-card-text" style="font-size: 18px;">MetaTrader 4 remains a top choice for
+                            traders globally thanks to its intuitive design and comprehensive functionality. The
+                            platform combines simplicity with powerful features, making it ideal for both beginners and
+                            professionals. </p>
+                        <br />
+                        <p class="rbt-card-text" style="font-size: 18px;">Access your account on desktop, web, or
+                            mobile — and trade with confidence anytime, anywhere.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-sal-delay="100" data-sal="slide-left" data-sal-duration="600">
+                <div class="content text-center">
+                    <img src="{{ asset('assets/images/service/mt4-2.png') }}" alt="MT4 Images">
+                </div>
+            </div>
+        </div>
+        <!-- End Single Section  -->
+
+        <!-- Start Single Section  -->
+        <div class="row g-5 align-items-center mg-y pd-y">
+            <div class="col-lg-6" data-sal-delay="100" data-sal="slide-right" data-sal-duration="600">
+                <div class="content text-center">
+                    <img src="{{ asset('assets/images/service/mt4-3.jpg') }}" alt="MT4 Images"
+                        style="border-radius: 20px;">
+                </div>
+            </div>
+            <div class="col-lg-6" data-sal-delay="300" data-sal="slide-left" data-sal-duration="600">
+                <div class="inner pl--50 pl_sm--5">
+
+                    <div class="content text-start">
+                        <div class="icon">
+                            <img src="{{ asset('assets/images/icons/mt4-3.png') }}" width="60px" height="60px"
+                                alt="Icons Images" style="margin-bottom: 20px;">
+                        </div>
+                        <h3 class="title">Automated Trading with Expert Advisors (EAs)</h3>
+                        <p class="rbt-card-text" style="font-size: 18px;">Boost your trading efficiency with Expert
+                            Advisors (EAs) — fully customisable automation tools within MT4.</p>
+                        <br />
+                        <p class="rbt-card-text" style="font-size: 18px;"> These smart trading bots analyse price data
+                            and execute trades based on predefined strategies, allowing you to automate your trading
+                            around the clock, without manual intervention.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Single Section  -->
+
+        <!-- Start Single Section  -->
+        <div class="row g-5 align-items-center bg-color-coral-opacity mg-y pd-y">
+            <div class="col-lg-6" data-sal-delay="300" data-sal="slide-right" data-sal-duration="600">
+                <div class="inner pl--50 pl_sm--5">
+
+                    <div class="content text-start">
+                        <div class="icon">
+                            <img src="{{ asset('assets/images/icons/mt4-4.png') }}" width="60px" height="60px"
+                                alt="Icons Images" style="margin-bottom: 20px;">
+                        </div>
+                        <h3 class="title">Real-Time Trading Signals</h3>
+                        <p class="rbt-card-text" style="font-size: 18px;">Stay informed and responsive with MT4’s
+                            built-in trading signal system. Subscribe to free or paid signal providers and automatically
+                            mirror their trades.</p>
+                        <br />
+                        <p class="rbt-card-text" style="font-size: 18px;">Each signal is ranked by performance,
+                            helping you identify high-potential strategies and act on opportunities as they arise — with
+                            no guesswork.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-sal-delay="100" data-sal="slide-left" data-sal-duration="600">
+                <div class="content text-center">
+                    <img src="{{ asset('assets/images/service/mt4-4.png') }}" alt="MT4 Images" style="height: 350px;">
+                </div>
+            </div>
+        </div>
+        <!-- End Single Section  -->
     </div>
     <!-- End Course Area -->
 

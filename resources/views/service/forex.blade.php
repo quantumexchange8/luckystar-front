@@ -121,7 +121,7 @@
                                         <span class="cd-headline cd-headline clip is-full-width">
                                             <span class="cd-words-wrapper">
                                                 <b class="is-visible theme-gradient">24/5 Market, Endless Possibilities.</b>
-                                                <b class="is-hidden theme-gradient">Navigate Currency Trends, Master the
+                                                <b class="is-hidden theme-gradient">Master the
                                                     Market.</b>
                                             </span>
                                         </span>

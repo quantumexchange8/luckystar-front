@@ -601,50 +601,116 @@
                     <!-- Start Mega Menu  -->
                     <div class="rbt-megamenu grid-item-4">
                         <div class="wrapper">
-                            <div class="row row--15">
+                            <div class="row row--15" style="margin-top:10px;">
                                 <div class="col-lg-12 col-xl-3 col-xxl-3 single-mega-item">
                                     <div class="mega-category-item">
-                                        <!-- Start Single Category  -->
-                                        <div class="nav-category-item">
-                                            <div class="thumbnail">
-                                                <div class="image"><img
-                                                        src="{{ asset('assets/images/course/category2.jpg') }}"
-                                                        alt="Course images"></div>
-                                                <a href="{{ route('serviceMobileApp') }}">
-                                                    <span>Mobile Application</span>
-                                                    <i class="feather-chevron-right"></i>
-                                                </a>
+                                        <h2 class="rbt-short-title">TRADING SOFTWARE</h3>
+                                            <!-- Start Single Category  -->
+                                            <div class="nav-category-item glass-effect"
+                                                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/course/category2.jpg') }});">
+                                                <div class="thumbnail">
+                                                    <div class="image"><img
+                                                            src="{{ asset('assets/images/icons/navbarService-1.png') }}"
+                                                            alt="Mobile App"></div>
+                                                    <a href="{{ route('serviceMobileApp') }}">
+                                                        <span>Mobile Application</span>
+                                                        <i class="feather-chevron-right"></i>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!-- End Single Category  -->
+                                            <!-- End Single Category  -->
 
-                                        <!-- Start Single Category  -->
-                                        <div class="nav-category-item">
-                                            <div class="thumbnail">
-                                                <div class="image"><img
-                                                        src="{{ asset('assets/images/course/category5.png') }}"
-                                                        alt="Course images"></div>
-                                                <a href="{{ route('serviceMT5') }}">
-                                                    <span>MetaTrader 5</span>
-                                                    <i class="feather-chevron-right"></i>
-                                                </a>
+                                            <h2 class="rbt-short-title" style="padding-top:2px;">TRADING
+                                                PLATFORM</h2>
+                                            <!-- Start Single Category  -->
+                                            <div class="nav-category-item glass-effect"
+                                                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-1.jpg') }});">
+                                                <div class="thumbnail">
+                                                    <div class="image"><img
+                                                            src="{{ asset('assets/images/course/category5.png') }}"
+                                                            alt="Course images"></div>
+                                                    <a href="{{ route('serviceMT5') }}">
+                                                        <span>Meta Trader 5 (MT5)</span>
+                                                        <i class="feather-chevron-right"></i>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!-- End Single Category  -->
+                                            <!-- End Single Category  -->
 
-                                        <!-- Start Single Category  -->
-                                        <div class="nav-category-item">
-                                            <div class="thumbnail">
-                                                <div class="image"><img
-                                                        src="{{ asset('assets/images/course/category4.png') }}"
-                                                        alt="Course images"></div>
-                                                <a href="{{ route('serviceMT4') }}">
-                                                    <span>MetaTrader 4</span>
-                                                    <i class="feather-chevron-right"></i>
-                                                </a>
+                                            <!-- Start Single Category  -->
+                                            <div class="nav-category-item glass-effect"
+                                                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-2.jpg') }});">
+                                                <div class="thumbnail">
+                                                    <div class="image"><img
+                                                            src="{{ asset('assets/images/course/category4.png') }}"
+                                                            alt="Course images"></div>
+                                                    <a href="{{ route('serviceMT4') }}">
+                                                        <span>Meta Trader 4 (MT4)</span>
+                                                        <i class="feather-chevron-right"></i>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!-- End Single Category  -->
+                                            <!-- End Single Category  -->
+
+                                            <h2 class="rbt-short-title" style="padding-top:2px;">TRADING
+                                                PRODUCT</h2>
+                                            <!-- Start Single Category  -->
+                                            <div class="nav-category-item glass-effect"
+                                                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-3.jpg') }});">
+                                                <div class="thumbnail">
+                                                    <div class="image"><img
+                                                            src="{{ asset('assets/images/icons/navbarService-2.png') }}"
+                                                            alt="Course images"></div>
+                                                    <a href="{{ route('serviceForex') }}">
+                                                        <span>Forex</span>
+                                                        <i class="feather-chevron-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Category  -->
+                                            <!-- Start Single Category  -->
+                                            <div class="nav-category-item glass-effect"
+                                                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-4.jpg') }});">
+                                                <div class="thumbnail">
+                                                    <div class="image"><img
+                                                            src="{{ asset('assets/images/icons/navbarService-3.png') }}"
+                                                            alt="Course images"></div>
+                                                    <a href="{{ route('serviceIndices') }}">
+                                                        <span>Indices</span>
+                                                        <i class="feather-chevron-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Category  -->
+                                            <!-- Start Single Category  -->
+                                            <div class="nav-category-item glass-effect"
+                                                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-6.jpg') }});">
+
+                                                <div class="thumbnail">
+                                                    <div class="image"><img
+                                                            src="{{ asset('assets/images/icons/navbarService-5.png') }}"
+                                                            alt="Course images"></div>
+                                                    <a href="{{ route('serviceMetal') }}">
+                                                        <span>Precious Metal</span>
+                                                        <i class="feather-chevron-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Category  -->
+                                            <!-- Start Single Category  -->
+                                            <div class="nav-category-item glass-effect"
+                                                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-5.jpg') }});">
+                                                <div class="thumbnail">
+                                                    <div class="image"><img
+                                                            src="{{ asset('assets/images/icons/navbarService-4.png') }}"
+                                                            alt="Course images"></div>
+                                                    <a href="{{ route('serviceStock') }}">
+                                                        <span>Stock</span>
+                                                        <i class="feather-chevron-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- End Single Category  -->
 
                                     </div>
                                 </div>

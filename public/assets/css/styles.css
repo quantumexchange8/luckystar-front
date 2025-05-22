@@ -149,7 +149,7 @@
   --color-lighter: #F2F5F9;
   --primary-opacity: #2f57ef21;
   --secondary-opacity: #b966e721;
-  --coral-opacity: #E9967A21;
+  --coral-opacity: #4f53e521;
   --violet-opacity: #80008021;
   --pink-opacity: #DB709321;
   --white-opacity: #ffffff21;
@@ -14206,7 +14206,7 @@ span.transparent-button:hover i {
 }
 @media only screen and (max-width: 767px) {
   .rbt-breadcrumb-default .title {
-    font-size: 28px;
+    font-size: 16px;
   }
 }
 
@@ -22101,12 +22101,12 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .rbt-default-tab .tab-button .tabs__tab .nav-link {
-    padding: 24px 24px;
+    padding: 24px 44px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rbt-default-tab .tab-button .tabs__tab .nav-link {
-    padding: 24px 24px;
+    padding: 24px 44px;
   }
 }
 @media only screen and (max-width: 767px) {

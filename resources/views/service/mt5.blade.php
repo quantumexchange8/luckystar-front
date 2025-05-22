@@ -36,6 +36,37 @@
             background-attachment: fixed;
             background-position: center;
         }
+
+        @media only screen and (max-width: 767px) {
+            .mg-y {
+                margin: 50px 0;
+            }
+
+            .pd-y {
+                padding: 50px 25px;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .mg-y {
+                margin: 100px 0;
+            }
+
+            .pd-y {
+                padding: 100px 50px;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .sml-content {
+                padding: 0 200px;
+            }
+        }
+
+        .download-tab {
+            padding: 0;
+            margin: 0;
+        }
     </style>
     <!-- Start Side Vav -->
 
@@ -139,33 +170,47 @@
 
     <div class="rbt-tab-area bg-color-white " data-sal-delay="0" data-sal="slide-up" data-sal-duration="800">
         <div class="container">
-            <div class="row row row--30 align-items-center">
+            <div class="row row row--30 align-items-center download-tab ">
                 <div class="col-md-8 col-lg-7 col-xl-6 mt_md--40 mt_sm--40 order-2 order-lg-1"
                     style="margin-left: auto; margin-right:auto;">
                     <div class="rbt-default-tab" style="box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); border-radius:20px;">
                         <ul class="nav nav-tabs tab-button" role="tablist"
                             style=" border-bottom: 1px solid rgb(236, 233, 233);">
-                            <li class="nav-item tabs__tab " role="presentation">
 
+                            <li class="nav-item tabs__tab col-4" role="presentation">
                                 <button class="nav-link active" id="home-tab-5" data-bs-toggle="tab"
                                     data-bs-target="#android" type="button" role="tab" aria-controls="android"
-                                    aria-selected="true">
+                                    aria-selected="true" style="border-radius: 20px 0 0 0; width:100%; height:100%;">
                                     <div class="icon">
                                         <img src="{{ asset('assets/images/icons/android.png') }}" width="45px"
-                                            height="45px" alt="Icons Images" style="padding: 10px;">Android
+                                            height="45px" alt="Icons Images" style="padding: 10px;">
                                     </div>
+                                    Android
                                 </button>
                             </li>
-                            <li class="nav-item tabs__tab " role="presentation">
+                            <li class="nav-item tabs__tab col-4" role="presentation">
                                 <button class="nav-link" id="home-tab-5" data-bs-toggle="tab" data-bs-target="#windows"
-                                    type="button" role="tab" aria-controls="windows" aria-selected="true">
+                                    type="button" role="tab" aria-controls="windows" aria-selected="true"
+                                    style="width:100%; height:100%;">
                                     <div class="icon">
                                         <img src="{{ asset('assets/images/icons/windows.png') }}" width="45px"
-                                            height="45px" alt="Icons Images" style="padding: 10px;">Windows
+                                            height="45px" alt="Icons Images" style="padding: 10px;">
                                     </div>
+                                    Windows
                                 </button>
                             </li>
-                            <li class="nav-item tabs__tab " role="presentation">
+                            <li class="nav-item tabs__tab col-4" role="presentation">
+                                <button class="nav-link" id="home-tab5" data-bs-toggle="tab" data-bs-target="#Mac"
+                                    type="button" role="tab" aria-controls="Mac" aria-selected="true"
+                                    style="border-radius: 0 20px 0 0; width:100%; height:100%;">
+                                    <div class="icon">
+                                        <img src="{{ asset('assets/images/icons/mac-os-logo.png') }}" width="45px"
+                                            height="45px" alt="Icons Images" style="padding: 10px;">
+                                    </div>
+                                    Mac
+                                </button>
+                            </li>
+                            {{-- <li class="nav-item tabs__tab col-4" role="presentation">
                                 <button class="nav-link" id="home-tab5" data-bs-toggle="tab" data-bs-target="#Mac"
                                     type="button" role="tab" aria-controls="Mac" aria-selected="false">
                                     <div class="icon">
@@ -173,7 +218,7 @@
                                             width="45px" height="45px" alt="Icons Images" style="padding: 10px;">Mac
                                     </div>
                                 </button>
-                            </li>
+                            </li> --}}
                         </ul>
                         <div class="rainbow-tab-content tab-content" style="border-radius: 0 0 20px 20px;">
                             <div class="tab-pane fade show active" id="android" role="tabpanel"
@@ -222,140 +267,160 @@
         </div>
     </div>
 
-    <!-- Start Course Area -->
-    <div class="rbt-course-area rbt-section-gapBottom rbt-section-gap">
-        <div class="container">
-            <div class="row g-5">
+    <div class="rbt-about-area about-style-1 bg-color-white rbt-section-gapBottom">
+        <!-- Start Single Section  -->
+        <div class="row g-5 align-items-center mg-y pd-y">
+            <div class="col-lg-6" data-sal-delay="100" data-sal="slide-right" data-sal-duration="600">
+                <div class="content">
+                    <img src="{{ asset('assets/images/service/mt5-2.png') }}" alt="MT5 Images">
+                </div>
+            </div>
+            <div class="col-lg-6" data-sal-delay="300" data-sal="slide-left" data-sal-duration="600">
+                <div class="inner pl--50 pl_sm--5">
 
-                <!-- Start Single Card  -->
-                <div class="col-xl-6 col-lg-6 col-md-6 col-12" data-sal-delay="0" data-sal="slide-up"
-                    data-sal-duration="800">
-                    <div class="rbt-card variation-03 style_2 card-hover">
-                        <div class="rbt-card-body">
-                            <div class="icon">
-                                <img src="{{ asset('assets/images/icons/mt5-1.png') }}" width="60px" height="60px"
-                                    alt="Icons Images" style="margin-bottom: 20px;">
-                            </div>
-                            <h5 class="rbt-card-title">Automated Trading and Expert Signals
-                            </h5>
-                            <p class="rbt-card-text" style="font-size: 18px;">Maximize your strategy with MT5’s built-in
-                                support for automated
-                                trading and professional forex trading signals. Choose from thousands of verified signal
-                                providers in the MetaTrader Market and automatically mirror the trades of top-performing
-                                professionals. </p>
-                            <br />
-                            <p class="rbt-card-text" style="font-size: 18px;">
-                                You can also explore and purchase over 2,000 expert advisors (EAs) and
-                                technical indicators to customize and automate your trading experience.</p>
+                    <div class="content text-start">
+                        <div class="icon">
+                            <img src="{{ asset('assets/images/icons/mt5-1.png') }}" width="60px" height="60px"
+                                alt="Icons Images" style="margin-bottom: 20px;">
                         </div>
+                        <h3 class="title">Automated Trading and Expert Signals</h3>
+                        <p class="rbt-card-text" style="font-size: 18px;">Maximize your strategy with MT5’s built-in
+                            support for automated
+                            trading and professional forex trading signals. Choose from thousands of verified signal
+                            providers in the MetaTrader Market and automatically mirror the trades of top-performing
+                            professionals. </p>
+                        <br />
+                        <p class="rbt-card-text" style="font-size: 18px;">
+                            You can also explore and purchase over 2,000 expert advisors (EAs) and
+                            technical indicators to customize and automate your trading experience.</p>
+
                     </div>
                 </div>
-                <!-- End Single Card  -->
-
-                <!-- Start Single Card  -->
-                <div class="col-xl-6 col-lg-6 col-md-6 col-12" data-sal-delay="0" data-sal="slide-up"
-                    data-sal-duration="800">
-                    <div class="rbt-card variation-03 style_2 card-hover">
-                        <div class="rbt-card-body">
-                            <div class="icon">
-                                <img src="{{ asset('assets/images/icons/mt5-2.png') }}" width="60px" height="60px"
-                                    alt="Icons Images" style="margin-bottom: 20px;">
-                            </div>
-                            <h5 class="rbt-card-title">Stay Ahead with Real-Time Alerts
-                            </h5>
-                            <p class="rbt-card-text" style="font-size: 18px;">Never miss a market opportunity. MT5’s
-                                built-in alert and news system keeps you informed of key economic events and market
-                                movements—no external calendar needed. </p>
-                            <br />
-                            <p class="rbt-card-text" style="font-size: 18px;">Get real-time updates directly in your
-                                trading terminal to help you make timely and informed decisions.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Card  -->
-
-                <!-- Start Single Card  -->
-                <div class="col-xl-6 col-lg-6 col-md-6 col-12" data-sal-delay="100" data-sal="slide-up"
-                    data-sal-duration="800">
-                    <div class="rbt-card variation-03 style_2 card-hover">
-                        <div class="rbt-card-body">
-                            <div class="icon">
-                                <img src="{{ asset('assets/images/icons/mt5-3.png') }}" width="60px" height="60px"
-                                    alt="Icons Images" style="margin-bottom: 20px;">
-                            </div>
-                            <h5 class="rbt-card-title">Enhanced Performance and Trading Tools
-                            </h5>
-                            <p class="rbt-card-text" style="font-size: 18px;">MT5 offers a significant edge over MT4,
-                                including faster trade execution, tighter spreads, and superior charting capabilities.</p>
-                            <br />
-                            <p class="rbt-card-text" style="font-size: 18px;"> Analyze market trends across 21 timeframes,
-                                take advantage of advanced order types, and execute your strategy with precision using a
-                                more flexible and responsive trading environment.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Card  -->
-
-                <!-- Start Single Card  -->
-                <div class="col-xl-6 col-lg-6 col-md-6 col-12" data-sal-delay="100" data-sal="slide-up"
-                    data-sal-duration="800">
-                    <div class="rbt-card variation-03 style_2 card-hover">
-                        <div class="rbt-card-body">
-                            <div class="icon">
-                                <img src="{{ asset('assets/images/icons/mt5-4.png') }}" width="60px" height="60px"
-                                    alt="Icons Images" style="margin-bottom: 20px;">
-                            </div>
-                            <h5 class="rbt-card-title">Trade Anywhere, Anytime
-                            </h5>
-                            <p class="rbt-card-text" style="font-size: 18px;">Trade seamlessly across desktop, mobile, and
-                                web with MT5. Whether you're at home or on the move, MT5 ensures uninterrupted access to the
-                                markets. </p>
-                            <br />
-                            <p class="rbt-card-text" style="font-size: 18px;">The MT5 mobile app delivers full trading
-                                functionality on smartphones and tablets, while MT5 WebTrader lets you trade instantly from
-                                any browser without downloads or installations. Start trading in minutes—whether you're a
-                                new client or upgrading from MT4.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Card  -->
-
-                <!-- Start Single Card  -->
-                <div class="col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                    <div class="rbt-card variation-03 style_2 card-horizontal card-hover"
-                        style="grid-template-columns: 5fr 1fr;">
-                        <div class="rbt-card-body">
-                            <h6>
-                                <span class="theme-gradient">Seamless Integration</span>
-                            </h6>
-
-                            <h5 class="rbt-card-title">Advanced Market Depth with Lucky Star Integration</h5>
-                            <p class="rbt-card-text" style="font-size: 18px;">Through its deep integration with Lucky
-                                Star,
-                                MT5 provides direct access to institutional-grade liquidity. View market depth in real time
-                                and identify key price levels where large volumes are positioned. </p>
-                            <br />
-                            <p class="rbt-card-text" style="font-size: 18px;"> Paired with MT5’s dual accounting modes
-                                (hedging and netting), this platform delivers advanced risk management tools tailored for
-                                precision trading.
-
-                            </p>
-                        </div>
-
-                        <div class="rbt_card-img-wrap blend-top">
-                            <div class="rbt-card-img">
-                                <img src="{{ asset('assets/images/service/mt5-1.jpg') }}" alt="mt5-1"
-                                    style="max-width: unset;border-radius: 10px 10px 0 0;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Card  -->
-
             </div>
         </div>
+        <!-- End Single Section  -->
+
+        <!-- Start Single Section  -->
+        <div class="row g-5 align-items-center bg-color-coral-opacity mg-y pd-y">
+            <div class="col-lg-6" data-sal-delay="300" data-sal="slide-right" data-sal-duration="600">
+                <div class="inner pl--50 pl_sm--5">
+
+                    <div class="content text-start">
+                        <div class="icon">
+                            <img src="{{ asset('assets/images/icons/mt5-2.png') }}" width="60px" height="60px"
+                                alt="Icons Images" style="margin-bottom: 20px;">
+                        </div>
+                        <h3 class="title">Stay Ahead with Real-Time Alerts</h3>
+                        <p class="rbt-card-text" style="font-size: 18px;">Never miss a market opportunity. MT5’s
+                            built-in alert and news system keeps you informed of key economic events and market
+                            movements—no external calendar needed. </p>
+                        <br />
+                        <p class="rbt-card-text" style="font-size: 18px;">Get real-time updates directly in your
+                            trading terminal to help you make timely and informed decisions.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-sal-delay="100" data-sal="slide-left" data-sal-duration="600">
+                <div class="content text-center">
+                    <img src="{{ asset('assets/images/service/mt5-3.png') }}" alt="MT5 Images">
+                </div>
+            </div>
+        </div>
+        <!-- End Single Section  -->
+
+        <!-- Start Single Section  -->
+        <div class="row g-5 align-items-center mg-y pd-y">
+            <div class="col-lg-6" data-sal-delay="100" data-sal="slide-right" data-sal-duration="600">
+                <div class="content">
+                    <img src="{{ asset('assets/images/service/mt5-4.png') }}" alt="MT5 Images">
+                </div>
+            </div>
+            <div class="col-lg-6" data-sal-delay="300" data-sal="slide-left" data-sal-duration="600">
+                <div class="inner pl--50 pl_sm--5">
+
+                    <div class="content text-start">
+                        <div class="icon">
+                            <img src="{{ asset('assets/images/icons/mt5-3.png') }}" width="60px" height="60px"
+                                alt="Icons Images" style="margin-bottom: 20px;">
+                        </div>
+                        <h3 class="title">Enhanced Performance and Trading Tools</h3>
+                        <p class="rbt-card-text" style="font-size: 18px;">MT5 offers a significant edge over MT4,
+                            including faster trade execution, tighter spreads, and superior charting capabilities.</p>
+                        <br />
+                        <p class="rbt-card-text" style="font-size: 18px;"> Analyze market trends across 21 timeframes,
+                            take advantage of advanced order types, and execute your strategy with precision using a
+                            more flexible and responsive trading environment.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Single Section  -->
+
+        <!-- Start Single Section  -->
+        <div class="row g-5 align-items-center bg-color-coral-opacity mg-y pd-y">
+            <div class="col-lg-6" data-sal-delay="300" data-sal="slide-right" data-sal-duration="600">
+                <div class="inner pl--50 pl_sm--5">
+
+                    <div class="content text-start">
+                        <div class="icon">
+                            <img src="{{ asset('assets/images/icons/mt5-4.png') }}" width="60px" height="60px"
+                                alt="Icons Images" style="margin-bottom: 20px;">
+                        </div>
+                        <h3 class="title">Trade Anywhere, Anytime</h3>
+                        <p class="rbt-card-text" style="font-size: 18px;">Trade seamlessly across desktop, mobile, and
+                            web with MT5. Whether you're at home or on the move, MT5 ensures uninterrupted access to the
+                            markets. </p>
+                        <br />
+                        <p class="rbt-card-text" style="font-size: 18px;">The MT5 mobile app delivers full trading
+                            functionality on smartphones and tablets, while MT5 WebTrader lets you trade instantly from
+                            any browser without downloads or installations. Start trading in minutes—whether you're a
+                            new client or upgrading from MT4.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-sal-delay="100" data-sal="slide-left" data-sal-duration="600">
+                <div class="content text-center">
+                    <img src="{{ asset('assets/images/service/mt5-5.png') }}" alt="MT5 Images">
+                </div>
+            </div>
+        </div>
+        <!-- End Single Section  -->
+
+        <!-- Start Single Section  -->
+        <div class="row g-5 align-items-center mg-y pd-y"
+            style="flex-direction: column; margin-bottom:10px; padding-bottom: 10px;">
+            <div class="col-12 text-center" data-sal-delay="100" data-sal="slide-up" data-sal-duration="600">
+                <div class="content">
+                    <img src="{{ asset('assets/images/service/mt5-1.jpg') }}" alt="MT5 Images"
+                        style="border-radius: 10px;">
+                </div>
+            </div>
+            <div class="col-12" data-sal-delay="300" data-sal="slide-up" data-sal-duration="600">
+                <div class="container">
+                    <div class="content text-center sml-content">
+                        <h6>
+                            <span class="theme-gradient">Seamless Integration</span>
+                        </h6>
+
+                        <h3 class="rbt-card-title">Advanced Market Depth with Lucky Star Integration</h3>
+                        <p class="rbt-card-text" style="font-size: 18px;">MT5 offers a significant edge over MT4,
+                            including faster trade execution, tighter spreads, and superior charting capabilities.</p>
+                        <br />
+                        <p class="rbt-card-text" style="font-size: 18px;"> Analyze market trends across 21 timeframes,
+                            take advantage of advanced order types, and execute your strategy with precision using a
+                            more flexible and responsive trading environment.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Single Section  -->
+
+
     </div>
-    <!-- End Course Area -->
 
     <!-- Start CallTo Action Area  -->
     <div class="rbt-call-to-action-area bg-gradient-8" style="padding: 30px 0;">

@@ -177,7 +177,7 @@
 
 
         <!-- Start Advance Tab  -->
-        <div class="rbt-advance-tab-area rbt-section-gapTop bg-color-white">
+        <div class="rbt-advance-tab-area rbt-section-gapTop bg-color-white" style="margin-bottom: 120px;">
             <div class="container">
                 <div class="row g-5" data-sal-delay="200" data-sal="slide-up" data-sal-duration="1500">
                     <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt_md--30 mt_sm--30 order-2 order-lg-1">
