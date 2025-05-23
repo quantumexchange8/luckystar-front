@@ -29,7 +29,7 @@
         }
 
         .bg {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/bg/navbarServiceBg-1.jpg');
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/bg/navbarServiceBg-1.webp');
             /* Or use the file you uploaded */
             background-size: cover;
             background-repeat: no-repeat;
@@ -67,6 +67,7 @@
             padding: 0;
             margin: 0;
         }
+
     </style>
     <!-- Start Side Vav -->
 

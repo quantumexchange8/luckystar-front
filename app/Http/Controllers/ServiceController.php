@@ -21,23 +21,28 @@ class ServiceController extends Controller
         return view("service/mt4");
     }
 
-        public function serviceForex()
+    public function serviceForex()
     {
         return view("service/forex");
     }
 
-        public function serviceIndices()
+    public function serviceIndices()
     {
         return view("service/indices");
     }
 
-        public function serviceMetal()
+    public function serviceMetal()
     {
         return view("service/metal");
     }
 
-        public function serviceStock()
+    public function serviceStock()
     {
         return view("service/stock");
+    }
+
+    public function serviceCrypto()
+    {
+        return view("service/crypto");
     }
 }

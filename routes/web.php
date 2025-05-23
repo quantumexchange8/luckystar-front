@@ -20,6 +20,7 @@ Route::prefix('service')->group(function () {
         Route::get('/Indices', 'serviceIndices')->name('serviceIndices');
         Route::get('/PreciousMetal', 'serviceMetal')->name('serviceMetal');
         Route::get('/Stock', 'serviceStock')->name('serviceStock');
+        Route::get('/CryptoCurrency', 'serviceCrypto')->name('serviceCrypto');
     });
 });
 

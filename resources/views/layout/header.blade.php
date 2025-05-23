@@ -45,6 +45,10 @@
         transition: all 0.5s ease;
     }
 
+    .nav-category-item .thumbnail a {
+        padding: 25px 20px;
+    }
+
     .thumbnail>a {
         color: white;
         position: relative;
@@ -246,7 +250,7 @@
                                 <div class="rbt-megamenu grid-item-2">
                                     <div class="wrapper">
                                         <div class="row row--15">
-                                            <div class="col-6 single-mega-item">
+                                            <div class="col-4 single-mega-item">
                                                 <div class="mega-category-item">
                                                     <h2 class="rbt-short-title">TRADING SOFTWARE</h3>
                                                         <!-- Start Single Category  -->
@@ -268,7 +272,7 @@
                                                             PLATFORM</h2>
                                                         <!-- Start Single Category  -->
                                                         <div class="nav-category-item glass-effect"
-                                                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-1.jpg') }});">
+                                                            style="background-image: url({{ asset('assets/images/bg/navbarServiceBg-1.webp') }});">
                                                             <div class="thumbnail">
                                                                 <div class="image"><img
                                                                         src="{{ asset('assets/images/course/category5.png') }}"
@@ -298,67 +302,102 @@
 
                                                 </div>
                                             </div>
-                                            <div class="col-6 single-mega-item">
+                                            <div class="col-8 single-mega-item">
                                                 <div class="mega-category-item">
+
                                                     <h2 class="rbt-short-title" style="padding-top:2px;">TRADING
                                                         PRODUCT</h2>
-                                                    <!-- Start Single Category  -->
-                                                    <div class="nav-category-item glass-effect"
-                                                        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-3.jpg') }});">
-                                                        <div class="thumbnail">
-                                                            <div class="image"><img
-                                                                    src="{{ asset('assets/images/icons/navbarService-2.png') }}"
-                                                                    alt="Course images"></div>
-                                                            <a href="{{ route('serviceForex') }}">
-                                                                <span>Forex</span>
-                                                                <i class="feather-chevron-right"></i>
-                                                            </a>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <!-- Start Single Category  -->
+                                                            <div class="nav-category-item glass-effect"
+                                                                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-3.jpg') }});">
+                                                                <div class="thumbnail">
+                                                                    <div class="image"><img
+                                                                            src="{{ asset('assets/images/icons/navbarService-2.png') }}"
+                                                                            alt="Course images"></div>
+                                                                    <a href="{{ route('serviceForex') }}">
+                                                                        <span>Forex</span>
+                                                                        <i class="feather-chevron-right"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- End Single Category  -->
                                                         </div>
-                                                    </div>
-                                                    <!-- End Single Category  -->
-                                                    <!-- Start Single Category  -->
-                                                    <div class="nav-category-item glass-effect"
-                                                        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-4.jpg') }});">
-                                                        <div class="thumbnail">
-                                                            <div class="image"><img
-                                                                    src="{{ asset('assets/images/icons/navbarService-3.png') }}"
-                                                                    alt="Course images"></div>
-                                                            <a href="{{ route('serviceIndices') }}">
-                                                                <span>Indices</span>
-                                                                <i class="feather-chevron-right"></i>
-                                                            </a>
+                                                        <div class="col-6">
+                                                            <!-- Start Single Category  -->
+                                                            <div class="nav-category-item glass-effect"
+                                                                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-7.jpg') }});">
+                                                                <div class="thumbnail">
+                                                                    <div class="image"><img
+                                                                            src="{{ asset('assets/images/icons/navbarService-6.png') }}"
+                                                                            alt="Course images"></div>
+                                                                    <a href="{{ route('serviceCrypto') }}">
+                                                                        <span>CryptoCurrency</span>
+                                                                        <i class="feather-chevron-right"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- End Single Category  -->
                                                         </div>
-                                                    </div>
-                                                    <!-- End Single Category  -->
-                                                    <!-- Start Single Category  -->
-                                                    <div class="nav-category-item glass-effect"
-                                                        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-6.jpg') }});">
 
-                                                        <div class="thumbnail">
-                                                            <div class="image"><img
-                                                                    src="{{ asset('assets/images/icons/navbarService-5.png') }}"
-                                                                    alt="Course images"></div>
-                                                            <a href="{{ route('serviceMetal') }}">
-                                                                <span>Precious Metal</span>
-                                                                <i class="feather-chevron-right"></i>
-                                                            </a>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <!-- Start Single Category  -->
+                                                            <div class="nav-category-item glass-effect"
+                                                                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-4.jpg') }});">
+                                                                <div class="thumbnail">
+                                                                    <div class="image"><img
+                                                                            src="{{ asset('assets/images/icons/navbarService-3.png') }}"
+                                                                            alt="Course images"></div>
+                                                                    <a href="{{ route('serviceIndices') }}">
+                                                                        <span>Indices</span>
+                                                                        <i class="feather-chevron-right"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- End Single Category  -->
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <!-- Start Single Category  -->
+                                                            <div class="nav-category-item glass-effect"
+                                                                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-5.jpg') }});">
+                                                                <div class="thumbnail">
+                                                                    <div class="image"><img
+                                                                            src="{{ asset('assets/images/icons/navbarService-4.png') }}"
+                                                                            alt="Course images"></div>
+                                                                    <a href="{{ route('serviceStock') }}">
+                                                                        <span>Stock</span>
+                                                                        <i class="feather-chevron-right"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- End Single Category  -->
                                                         </div>
                                                     </div>
-                                                    <!-- End Single Category  -->
-                                                    <!-- Start Single Category  -->
-                                                    <div class="nav-category-item glass-effect"
-                                                        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-5.jpg') }});">
-                                                        <div class="thumbnail">
-                                                            <div class="image"><img
-                                                                    src="{{ asset('assets/images/icons/navbarService-4.png') }}"
-                                                                    alt="Course images"></div>
-                                                            <a href="{{ route('serviceStock') }}">
-                                                                <span>Stock</span>
-                                                                <i class="feather-chevron-right"></i>
-                                                            </a>
+
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <!-- Start Single Category  -->
+                                                            <div class="nav-category-item glass-effect"
+                                                                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-6.jpg') }});">
+
+                                                                <div class="thumbnail">
+                                                                    <div class="image"><img
+                                                                            src="{{ asset('assets/images/icons/navbarService-5.png') }}"
+                                                                            alt="Course images"></div>
+                                                                    <a href="{{ route('serviceMetal') }}">
+                                                                        <span>Precious Metal</span>
+                                                                        <i class="feather-chevron-right"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- End Single Category  -->
                                                         </div>
                                                     </div>
-                                                    <!-- End Single Category  -->
+
                                                 </div>
                                             </div>
                                         </div>
@@ -609,7 +648,7 @@
                                             <div class="nav-category-item glass-effect"
                                                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/course/category2.jpg') }});">
                                                 <div class="thumbnail">
-                                                    <div class="image"><img
+                                                    <div class="image"><img style="width: 18%; height: 85%;"
                                                             src="{{ asset('assets/images/icons/navbarService-1.png') }}"
                                                             alt="Mobile App"></div>
                                                     <a href="{{ route('serviceMobileApp') }}">
@@ -624,9 +663,9 @@
                                                 PLATFORM</h2>
                                             <!-- Start Single Category  -->
                                             <div class="nav-category-item glass-effect"
-                                                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-1.jpg') }});">
+                                                style="background-image: url({{ asset('assets/images/bg/navbarServiceBg-1.webp') }});">
                                                 <div class="thumbnail">
-                                                    <div class="image"><img
+                                                    <div class="image"><img style="width: 18%; height: 85%;"
                                                             src="{{ asset('assets/images/course/category5.png') }}"
                                                             alt="Course images"></div>
                                                     <a href="{{ route('serviceMT5') }}">
@@ -641,7 +680,7 @@
                                             <div class="nav-category-item glass-effect"
                                                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-2.jpg') }});">
                                                 <div class="thumbnail">
-                                                    <div class="image"><img
+                                                    <div class="image"><img style="width: 18%; height: 85%;"
                                                             src="{{ asset('assets/images/course/category4.png') }}"
                                                             alt="Course images"></div>
                                                     <a href="{{ route('serviceMT4') }}">
@@ -658,7 +697,7 @@
                                             <div class="nav-category-item glass-effect"
                                                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-3.jpg') }});">
                                                 <div class="thumbnail">
-                                                    <div class="image"><img
+                                                    <div class="image"><img style="width: 18%; height: 85%;"
                                                             src="{{ asset('assets/images/icons/navbarService-2.png') }}"
                                                             alt="Course images"></div>
                                                     <a href="{{ route('serviceForex') }}">
@@ -672,7 +711,7 @@
                                             <div class="nav-category-item glass-effect"
                                                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-4.jpg') }});">
                                                 <div class="thumbnail">
-                                                    <div class="image"><img
+                                                    <div class="image"><img style="width: 18%; height: 85%;"
                                                             src="{{ asset('assets/images/icons/navbarService-3.png') }}"
                                                             alt="Course images"></div>
                                                     <a href="{{ route('serviceIndices') }}">
@@ -687,7 +726,7 @@
                                                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-6.jpg') }});">
 
                                                 <div class="thumbnail">
-                                                    <div class="image"><img
+                                                    <div class="image"><img style="width: 18%; height: 85%;"
                                                             src="{{ asset('assets/images/icons/navbarService-5.png') }}"
                                                             alt="Course images"></div>
                                                     <a href="{{ route('serviceMetal') }}">
@@ -701,7 +740,7 @@
                                             <div class="nav-category-item glass-effect"
                                                 style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ asset('assets/images/bg/navbarServiceBg-5.jpg') }});">
                                                 <div class="thumbnail">
-                                                    <div class="image"><img
+                                                    <div class="image"><img style="width: 18%; height: 85%;"
                                                             src="{{ asset('assets/images/icons/navbarService-4.png') }}"
                                                             alt="Course images"></div>
                                                     <a href="{{ route('serviceStock') }}">
